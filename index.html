@@ -10,9 +10,9 @@
 
 <body>
 	<header class="heading-section">
-		<div class="heading">
-			<h2><img src="./asset/img/logo.png" alt="Logo Monitor"></h2>
+		<div class="heading-container">
 			<nav class="nav-page">
+				<h2><img src="./asset/img/logo.png" alt="Logo Monitor"></h2>
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Category</a></li>
@@ -20,18 +20,22 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="search-input">
-				<img src="./asset/img/icon-search.png" alt="search-icon">
-				<input type="text" placeholder="Search something here!">
-			</div>
-			<div class="option-money">
-				<button>Join the community</button>
-				<img src="./asset/img/icon-vnd.png" alt="icon-vnd">
-				<select id="currency" name="vnd">
-					<option value="au">VND</option>
-					<option value="ca">USD</option>
-					<option value="usa">Yen</option>
-				</select>
+			<div>
+				<form>
+					<div class="search-input">
+						<img src="./asset/img/icon-search.png" alt="search-icon">
+						<input type="text" placeholder="Search something here!">
+					</div>
+					<div class="option-money">
+						<button>Join the community</button>
+						<img src="./asset/img/icon-vnd.png" alt="icon-vnd">
+						<select id="currency" name="vnd">
+							<option value="au">VND</option>
+							<option value="ca">USD</option>
+							<option value="usa">Yen</option>
+						</select>
+					</div>
+				</form>
 			</div>
 		</div>
 	</header>
@@ -39,11 +43,12 @@
 		<section class="section-homepage">
 			<div class="left">
 				<h1>One more friend</h1>
-				<p>Thousands more fun!</p>
+				<h2>Thousands more fun!</h2>
 				<p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to
 					have fun. We have 200+ different pets that can meet your needs!</p>
 				<div>
-					<button><span>
+					<button>
+						<span>
 							View Into
 						</span>
 						<img src="./asset/img/vector.png" alt="vector-icon">
@@ -57,101 +62,135 @@
 		</section>
 
 		<section class="section-more-animal">
-			<div>
+			<div class="description-title">
 				<div>
 					<span>Whats new?</span>
 					<h2>Take a look at some of our pets</h2>
 				</div>
 				<div>
-					<button><span>
+					<button>
+						<span>
 							View more
 						</span>
 						<img src="./asset/img/arrow-right.png" alt="arrow-right">
 					</button>
 				</div>
 			</div>
-			<ul class="product-pet">
-				<li class="pet-item">
-					<a href="#">
-						<img src="./asset/img/image1.png" alt="image1">
-						<div>
+			<ul class="product-list-pet">
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
 							<h3>MO231 - Pomeranian White</h3>
 							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-							<p>6.900.000 VND</p>
+							<span>6.900.000 VND</span>
 						</div>
 					</a>
 				</li>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/image1.png" alt="image1">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-					</div>
-				</div>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#" class="pet-item">
+						<div class="item-heading">
+							<img src="./asset/img/image1.png" alt="image1">
+						</div>
+						<div class="item-body">
+							<h3>MO231 - Pomeranian White</h3>
+							<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
+							<span>6.900.000 VND</span>
+						</div>
+					</a>
+				</li>
 			</ul>
 		</section>
 
 		<section class="banner-women-kiss-dog">
 			<div>
-				<img src="./asset/img/woman-kiss-dog.png" alt="">
+				<img src="./asset/img/woman-kiss-dog.png" alt="woman-kiss-dog">
 			</div>
 			<div>
 				<h2>One more friend</h2>
 				<p>Thousands more fun!</p>
-				<p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to
-					have fun. We have 200+ different pets that can meet your needs!</p>
+				<span>Having a pet means you have more joy, a new friend, a happy person who will always be with you to
+					have fun. We have 200+ different pets that can meet your needs!</span>
 				<div>
-					<button>View Intro
-						<img src="./asset/img/vector.png" alt="vector" width="3.33" height="6.67">
+					<button>
+						<span>
+							View Intro
+						</span>
+						<img src="./asset/img/vector.png" alt="vector">
 					</button>
 					<button>Explore Now</button>
 				</div>
@@ -159,140 +198,176 @@
 		</section>
 
 		<section class="section-product-animal">
-			<div>
+			<div class="description-title">
 				<div>
-					<p>Hard to choose right products for your pets?</p>
+					<span>Hard to choose right products for your pets?</span>
 					<h2>Our Products</h2>
 				</div>
 				<div>
-					<button>View more
-						<img src="./asset/img/arrow-right.png" alt="arrow-right" width="3.33" height="6.67">
+					<button>
+						<span>View more</span>
+						<img src="./asset/img/arrow-right.png" alt="arrow-right">
 					</button>
 				</div>
 			</div>
-			<div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>Reflex Plus Adult Cat Food Salmon</h3>
-						<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
-						<p>140.000 VND</p>
-						<div>
+			<ul class="product-list-food">
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-				<div>
-					<img src="./asset/img/product1.png" alt="product1" width="264" height="264">
-					<div>
-						<h3>MO231 - Pomeranian White</h3>
-						<span>Gene: <span>Male</span></span>. <span>Age: <span>02 months</span></span>
-						<p>6.900.000 VND</p>
-						<div>
+					</a>
+				</li>
+				<li class="list-pet-item">
+					<a href="#">
+						<div class="item-heading">
+							<img src="./asset/img/product1.png" alt="product1">
+						</div>
+						<div class="item-body">
+							<h3>Reflex Plus Adult Cat Food Salmon</h3>
+							<span>Product: <span>Dog Food</span></span>. <span>Size: <span>385mg</span></span>
+							<span>140.000 VND</span>
+						</div>
+						<div class="item-footer">
 							<img src="./asset/img/gift.png" alt="gift-icon">
 							<p>. Free Toy & Free Shaker</p>
 						</div>
-					</div>
-				</div>
-			</div>
+					</a>
+				</li>
+			</ul>
 		</section>
 
-		<section class="slick">
+		<section class="banner-pet-sellers">
 			<div>
 				<div>
-					<p>Proud to be part of</p>
+					<span>Proud to be part of</span>
 					<p>Pet Sellers</p>
 				</div>
 
 				<div>
-					<button>View more
-						<img src="./asset/img/arrow-right.png" alt="arrow-right" width="3.33" height="6.67">
+					<button>
+						<span>
+							View more
+						</span>
+						<img src="./asset/img/arrow-right.png" alt="arrow-right">
 					</button>
 				</div>
 			</div>
 
 			<div>
-				<img src="./asset/img/slick.png" alt="slick-icon" width="88" height="64">
+				<img src="./asset/img/slick.png" alt="slick-icon">
 			</div>
 		</section>
 
-		<section class="adroption-section">
+		<section class="banner-adoption">
 			<div>
 				<h2>Adoption</h2>
-				<img src="./asset/img/fontisto_paw.png" alt="fontisto_paw-icon" width="42" height="38">
+				<img src="./asset/img/fontisto_paw.png" alt="fontisto_paw-icon">
 			</div>
 			<p>We need help. so do they.</p>
 			<p>Adopt a pet and give it a home,
@@ -300,27 +375,44 @@
 			<div>
 				<button>Explore Now</button>
 				<button>View Intro
-					<img src="./asset/img/vector.png" alt="vector" width="3.33" height="6.67">
+					<img src="./asset/img/vector.png" alt="vector">
 				</button>
 			</div>
 		</section>
 
 		<section class="section-knowledge-pet">
 			<div>
-				<div>
-					<p>You already know ?</p>
+				<div class="description-title">
+					<span>You already know ?</span>
 					<h2>Useful pet knowledge</h2>
 				</div>
 				<div>
-					<button>View more
-						<img src="./asset/img/arrow-right.png" alt="arrow-right" width="3.33" height="6.67">
+					<button><span>View more</span>
+						<img src="./asset/img/arrow-right.png" alt="arrow-right">
 					</button>
 				</div>
 
 			</div>
-			<div>
+			<ul>
+				<li>
+					<a href="#">
+						<div class="heading">
+							<img src="./asset/img/knowledge-pet-1.png" alt="knowledge-pet-1">
+						</div>
+						<div class="body">
+							<div>
+								<span>Pet Knowledge</span>
+							</div>
+							<div>
+								<h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+								<p>The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest
+									pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.</p>
+							</div>
+						</div>
+					</a>
+				</li>
 				<div>
-					<img src="./asset/img/knowledge-pet-1.png" alt="knowledge-pet-1" width="364" height="243">
+					<img src="./asset/img/knowledge-pet-1.png" alt="knowledge-pet-1">
 					<div>
 						<h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
 
@@ -329,7 +421,7 @@
 					</div>
 				</div>
 				<div>
-					<img src="./asset/img/knowledge-pet-1.png" alt="knowledge-pet-1" width="364" height="243">
+					<img src="./asset/img/knowledge-pet-1.png" alt="knowledge-pet-1">
 					<div>
 						<h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
 
@@ -337,22 +429,13 @@
 							pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.</p>
 					</div>
 				</div>
-				<div>
-					<img src="./asset/img/knowledge-pet-1.png" alt="knowledge-pet-1" width="364" height="243">
-					<div>
-						<h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
-
-						<p>The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest
-							pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.</p>
-					</div>
-				</div>
-			</div>
+			</ul>
 		</section>
 	</main>
 
-	<footer>
+	<footer class="footer-section">
 		<div>
-			<h2>Register now so you don't miss our programs</h2>
+			<h4>Register now so you don't miss our programs</h4>
 			<div class="enter-your-name">
 				<input type="text" placeholder="Enter your name">
 				<button>Subcribe Now</button>
