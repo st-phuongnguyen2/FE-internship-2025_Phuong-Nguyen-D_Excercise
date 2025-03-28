@@ -2,25 +2,56 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-	<header class="header"></header>
+  <header class="header">
+    <div class="container">
+      <div class="section-navigation">
+        <h2 class="section-title"><img class="logo-img" src="./assets/images/monito-logo.png" alt="Logo Monitor"></h2>
+        <nav class="nav">
+          <ul classname="list-nav">
+            <li class="list-item"><a class="list-item-link" href="#">Home</a></li>
+            <li class="list-item"><a class="list-item-link" href="#">Category</a></li>
+            <li class="list-item"><a class="list-item-link" href="#">About</a></li>
+            <li class="list-item"><a class="list-item-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="section-actions">
+        <form class="form-search">
+          <div class="form-input">
+            <img class="search-icon" src="./assets/icons/search-icon.svg" alt="search-icon">
+            <input class="search-input" type="text" placeholder="Search something here!">
+          </div>
+        </form>
+        <button class="btn btn-primary btn-join-communiry">Join the community</button>
+        <div class="dropdown-group">
+          <img class="flag-icon" src="./assets/icons/vnd-icon.svg" alt="icon-vnd">
+          <select class="select-form" id="currency" name="vnd">
+            <option class="select-input-option" value="au">VND</option>
+            <option class="select-input-option" value="ca">USD</option>
+            <option class="select-input-option" value="usa">Yen</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<main class="main">
-		<section class="section section-banner"></section>
-		<section class="section section-product section-more-product"></section>
-		<section class="section section-banner-women-kiss-dog"></section>
-		<section class="section section-product section-our-product"></section>
-		<section class="section section-pet-sellers"></section>
-		<section class="section section-banner-adoption"></section>
-		<section class="section section-knowledge-pet"></section>
-	</main>
+  <main class="main">
+    <section class="section section-banner"></section>
+    <section class="section section-product section-more-product"></section>
+    <section class="section section-banner-women-kiss-dog"></section>
+    <section class="section section-product section-our-product"></section>
+    <section class="section section-pet-sellers"></section>
+    <section class="section section-banner-adoption"></section>
+    <section class="section section-knowledge-pet"></section>
+  </main>
 
-	<footer class="footer"></footer>
+  <footer class="footer"></footer>
 </body>
 
 </html>
