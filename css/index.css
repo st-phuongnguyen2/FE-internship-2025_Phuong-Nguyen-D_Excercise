@@ -4,6 +4,7 @@
   --black-color: #000;
   --white-color: #fff;
   --neutral-color: #00171f;
+  --dark-blue-80: #002a48;
 }
 
 * {
@@ -86,7 +87,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.list-product .list-item .card-img .pet-img {
+.list-product .list-item .card-img .product-img {
   object-fit: cover;
   width: 100%;
   max-height: 264px;
@@ -288,7 +289,7 @@ body {
   width: 700px;
   height: 500px;
 }
-/* no apply */
+
 .section-banner-women-kiss-dog .container {
   width: calc(100% - 160px);
   margin-left: auto;
@@ -316,12 +317,26 @@ body {
   width: 513px;
   height: 342px;
 }
-/* btn-group don't right */
+
 .section-banner-women-kiss-dog .section-content {
   text-align: right;
 }
 
 .section-banner-women-kiss-dog .section-content .section-description {
-  
 }
 
+.list-product .list-item .card-footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 7px;
+}
+
+.list-product .list-item .card-footer .card-footer-title {
+  color: var(--dark-blue-80);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
