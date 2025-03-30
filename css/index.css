@@ -344,3 +344,24 @@ body {
   font-size: 1.4rem;
   line-height: 20px;
 }
+
+.section-pet-sellers .list-seller {
+  display: flex;
+  gap: 3px;
+}
+
+.section-pet-sellers .list-seller .list-item {
+  flex: 1 1 calc((100% / 7) - 6px);
+  max-width: calc((100% / 7));
+  list-style-type: none;
+}
+
+.section-pet-sellers .list-seller .list-item .seller-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 112px;
+}
+
+.section-pet-sellers .section-title .section-subtitle {
+  display: inline;
+}
