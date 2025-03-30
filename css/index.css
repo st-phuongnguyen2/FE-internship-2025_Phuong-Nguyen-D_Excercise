@@ -5,6 +5,8 @@
   --white-color: #fff;
   --neutral-color: #00171f;
   --dark-blue-80: #002a48;
+  --state-color: #00A7E7;
+
 }
 
 * {
@@ -398,4 +400,49 @@ body {
 .section-banner-adoption .section-title .btn-icon {
   width: 42px;
   height: 38px;
+}
+
+.section-knowledge-pet .list-product .list-item {
+  flex: 1 1 calc((100% / 3) - 20px);
+  max-width: calc(100% / 3);
+  list-style-type: none;
+  padding: 10px 7px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-knowledge-pet .list-product .list-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section-knowledge-pet .card-body {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section-knowledge-pet .card-body .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 89px;
+  height: 20px;
+  background-color: var(--state-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 16px;
+  border-radius: 28px;
+  padding: 8px;
+}
+
+.section-knowledge-pet .card-body .card-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.6;
+  
 }
