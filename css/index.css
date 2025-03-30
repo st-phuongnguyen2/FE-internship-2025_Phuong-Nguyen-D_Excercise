@@ -316,12 +316,14 @@ body {
   width: 513px;
   height: 342px;
 }
-/* btn-group don't right */
+
 .section-banner-women-kiss-dog .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   text-align: right;
 }
 
 .section-banner-women-kiss-dog .section-content .section-description {
-  
 }
-
