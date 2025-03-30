@@ -5,8 +5,7 @@
   --white-color: #fff;
   --neutral-color: #00171f;
   --dark-blue-80: #002a48;
-  --state-color: #00A7E7;
-
+  --state-color: #00a7e7;
 }
 
 * {
@@ -444,5 +443,107 @@ body {
   font-size: 14px;
   line-height: 20px;
   opacity: 0.6;
-  
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 60px 0px 30px 0px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .section-subscribe {
+  display: flex;
+  background-color: var(--primary-color);
+  height: 136px;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.footer .section-subscribe .form-register {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer .section-subscribe .form-register .form-register-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 36px;
+  width: 500px;
+}
+
+.footer .section-subscribe .form-input {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+  background-color: var(--white-color);
+  border-radius: 14px;
+  height: 72px;
+  padding: 12px;
+}
+
+.footer .section-subscribe .email-input {
+  height: 48px;
+  width: 508px;
+  border-radius: 8px;
+  opacity: 0.7;
+  padding: 0 20px;
+}
+
+.footer .section-subscribe .btn-subscribe {
+  border-radius: 8px;
+}
+
+.footer .container .section-content {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd1d2;
+}
+
+.footer .section-content .list-info {
+  list-style: none;
+  display: flex;
+  column-gap: 60px;
+  padding: 20px 0;
+}
+
+.footer .section-content .list-info .list-item-link {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+
+.footer .section-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.footer .section-info .section-description {
+  display: flex;
+  column-gap: 30px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 20px;
+  opacity: 0.5;
+}
+
+.footer .section-info .monito-img {
+  width: 115px;
+  height: 40px;
+}
+
+.footer .section-info .policy-link {
+  text-decoration: none;
+  color: var(--black-color);
 }
