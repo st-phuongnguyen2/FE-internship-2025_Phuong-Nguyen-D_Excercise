@@ -26,10 +26,20 @@ body {
 .header {
   background-color: var(--secondary-color);
   padding: 30px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  margin-top: 110px;
 }
 
 .section {
-  padding-top: 15px;
+  padding-top: 30px;
   margin-bottom: 25px;
 }
 
@@ -262,11 +272,15 @@ body {
 }
 
 .section-content {
+  padding-top: 40px;
   width: 550px;
 }
 
 .section-banner {
   background-color: var(--secondary-color);
+  /* background-image: url('../assets/images/hero-banner.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .section-banner .section-content .section-title {
@@ -290,6 +304,7 @@ body {
   width: 700px;
   height: 500px;
 }
+
 
 .section-banner-women-kiss-dog .container {
   width: calc(100% - 160px);
