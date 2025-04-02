@@ -1,0 +1,33 @@
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.btn {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-radius: 57px;
+  padding: 14px 28px;
+  font-size: 1.6rem;
+}
+
+// .btn-icon {
+//   width: 24px;
+//   height: 24px;
+// }
+
+.icon-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-outline {
+  background-color: inherit;
+  outline: 1px solid var(--primary-color);
+}
