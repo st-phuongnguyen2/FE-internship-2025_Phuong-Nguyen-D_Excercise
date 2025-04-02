@@ -100,14 +100,17 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
   font-size: 1.6rem;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -116,13 +119,15 @@ blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -133,3 +138,5 @@ table {
   padding: 0;
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=style.css.map */
