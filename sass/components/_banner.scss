@@ -1,0 +1,33 @@
+.section-banner {
+  background-color: var(--secondary-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-title {
+  font-size: 6rem;
+}
+
+.section-subtitle {
+  font-size: 4.6rem;
+  line-height: 6rem;
+}
+
+.section-description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 163px;
+}
+
+.btn-primary {
+  width: 163px;
+}
