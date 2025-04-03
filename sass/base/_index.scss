@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'resets';
-@import 'mixins';
-@import 'extends';
-@import 'typography';
+@forward 'variables';
+@forward 'resets';
+@forward 'mixins';
+@forward 'extends';
