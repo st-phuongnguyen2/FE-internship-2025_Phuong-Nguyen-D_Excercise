@@ -1,19 +1,415 @@
-/* Error: Undefined variable.
- *    ,
- * 51 |       background-color: $white-color;
- *    |                         ^^^^^^^^^^^^
- *    '
- *   sass\layouts\_header.scss 51:25  @import
- *   sass\layouts\_index.scss 1:9     @import
- *   sass\style.scss 2:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 51 \2502        background-color: $white-color;\d\a    \2502                          ^^^^^^^^^^^^\a    \2575 \a   sass\\layouts\\_header.scss 51:25  @import\a   sass\\layouts\\_index.scss 1:9     @import\a   sass\\style.scss 2:9              root stylesheet";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../../assets/fonts/fonnts.com-SVNGilroy-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../../assets/fonts/fonnts.com-SVNGilroy-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+html,
+body {
+  font-family: "SVN-Gilroy", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fceed5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+}
+.header .section-body {
+  display: flex;
+  justify-content: space-between;
+}
+.header .section-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+}
+.header .section-navigation .section-title {
+  margin-right: 24px;
+}
+.header .section-navigation .section-title .logo-img {
+  width: 115px;
+  height: 40px;
+}
+.header .section-navigation .list-nav {
+  display: flex;
+}
+.header .section-navigation .list-nav .list-item {
+  padding: 0 24px;
+}
+.header .section-navigation .list-nav .list-item:last-child {
+  padding-right: 0;
+}
+.header .section-navigation .list-nav .list-item-link {
+  color: #003459;
+  font-weight: 700;
+}
+.header .section-actions {
+  display: flex;
+}
+.header .section-actions .form-search {
+  background-color: #FDFDFD;
+  border-radius: 30px;
+  width: 280px;
+  margin-right: 14px;
+}
+.header .section-actions .form-search .form-input {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 12px 16px;
+}
+.header .section-actions .form-search .form-input .search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+.header .section-actions .form-search .form-input .search-input {
+  border: 0;
+}
+.header .section-actions .btn-join-community {
+  margin-right: 15px;
+}
+.header .section-actions .dropdown-group {
+  display: flex;
+  align-items: center;
+}
+.header .section-actions .dropdown-group .flag-icon {
+  width: 24px;
+  height: 24px;
+}
+.header .section-actions .dropdown-group .select-form {
+  outline: none;
+  border: none;
+  background-color: #fceed5;
+  font-size: 16px;
+}
+
+.main {
+  margin-top: 70px;
+}
+
+.container {
+  max-width: 1212px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section-banner-adoption .banner-img, .section-banner-women-kiss-dog .banner-img, .section-banner .banner-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.section-banner-adoption .section-content, .section-banner-women-kiss-dog .section-content, .section-banner .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  left: 170px;
+  max-width: 480px;
+}
+.section-banner-adoption .section-content .section-title, .section-banner-women-kiss-dog .section-content .section-title, .section-banner .section-content .section-title {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  color: #003459;
+}
+.section-banner-adoption .section-content .section-subtitle, .section-banner-women-kiss-dog .section-content .section-subtitle, .section-banner .section-content .section-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.section-banner-adoption .section-content .section-description, .section-banner-women-kiss-dog .section-content .section-description, .section-banner .section-content .section-description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: justify;
+}
+.section-banner-adoption .section-content .btn-group, .section-banner-women-kiss-dog .section-content .btn-group, .section-banner .section-content .btn-group {
+  display: flex;
+  margin-top: 34px;
+}
+.section-banner-adoption .section-content .btn-group .btn-align, .section-banner-women-kiss-dog .section-content .btn-group .btn-align, .section-banner .section-content .btn-group .btn-align {
+  margin-right: 20px;
+}
+.section-banner-adoption .section-content .btn-group .btn-align .btn-text, .section-banner-women-kiss-dog .section-content .btn-group .btn-align .btn-text, .section-banner .section-content .btn-group .btn-align .btn-text {
+  margin-right: 8px;
+  color: #003459;
+  font-weight: 500;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 28px;
+  padding: 8px;
+  background-color: #00a7e7;
+  color: #FDFDFD;
+}
+
+.btn {
+  background-color: #FDFDFD;
+  color: #000000;
+  border-radius: 57px;
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #003459;
+  color: #FDFDFD;
+}
+
+.btn-outline {
+  background-color: inherit;
+  color: #003459;
+  border: 1px solid #003459;
+  display: flex;
+  align-items: center;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.section-banner {
+  position: relative;
+  margin: 108px 0 25px 0;
+}
+
+.section-banner-women-kiss-dog .container {
+  position: relative;
+}
+.section-banner-women-kiss-dog .banner-img {
+  height: 378px;
+}
+.section-banner-women-kiss-dog .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 40px;
+  left: 692px;
+  max-width: 400px;
+  text-align: right;
+}
+.section-banner-women-kiss-dog .section-content .section-title {
+  font-size: 52px;
+}
+.section-banner-women-kiss-dog .section-content .section-subtitle {
+  margin-top: 2px;
+  font-size: 36px;
+  line-height: 54px;
+}
+.section-banner-women-kiss-dog .section-content .section-description {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.section-banner-women-kiss-dog .section-content .btn-group {
+  margin-top: 24px;
+}
+
+.section-banner-adoption .container {
+  position: relative;
+}
+.section-banner-adoption .banner-img {
+  height: 378px;
+}
+.section-banner-adoption .section-content {
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  max-width: 480px;
+}
+.section-banner-adoption .section-content .section-title {
+  font-size: 52px;
+}
+.section-banner-adoption .section-content .section-title .btn-icon {
+  width: 42px;
+  height: 38px;
+}
+.section-banner-adoption .section-content .section-subtitle {
+  margin-top: 2px;
+  font-size: 36px;
+  line-height: 54px;
+}
+.section-banner-adoption .section-content .section-description {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.section-banner-adoption .section-content .btn-group {
+  margin-top: 42px;
+}
+.section-banner-adoption .section-content .btn-group .btn-align {
+  margin-right: 20px;
+}
+.section-banner-adoption .section-content .btn-group .btn-outline .btn-text {
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
