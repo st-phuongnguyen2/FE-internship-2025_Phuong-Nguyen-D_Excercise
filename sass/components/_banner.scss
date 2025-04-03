@@ -1,0 +1,50 @@
+%common-banner-section {
+  .banner-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .section-content {
+    @include flex(flex, column, none, center);
+    @include banner-section-content(absolute, 80px, 170px, 480px);
+
+    .section-title {
+      color: $primary-color;
+      font-weight: $font-800;
+      line-height: 68px;
+      font-size: $text-4xl;
+    }
+
+    .section-subtitle {
+      display: block;
+      font-weight: $font-700;
+      line-height: 60px;
+      font-size: $text-2xl;
+      margin-top: 4px;
+    }
+
+    .section-description {
+      font-size: $text-md;
+      font-weight: $font-500;
+      line-height: 24px;
+      text-align: justify;
+      margin-top: 24px;
+    }
+
+    .btn-group {
+      display: flex;
+      margin-top: 34px;
+
+      .btn-align {
+        margin-right: 20px;
+
+        .btn-text {
+          margin-right: 8px;
+          color: $primary-color;
+          font-weight: $font-500;
+        }
+      }
+    }
+  }
+}

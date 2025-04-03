@@ -23,3 +23,11 @@
     gap: $gap;
   }
 }
+
+@mixin banner-section-content($position, $top, $left, $maxWidth) {
+  position: $position;
+  top: $top;
+  left: $left;
+  max-width: $maxWidth;
+}
+

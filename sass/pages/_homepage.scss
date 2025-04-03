@@ -1,0 +1,97 @@
+.section-banner {
+  position: relative;
+  margin: 108px 0 25px 0;
+
+  @extend %common-banner-section;
+}
+
+.section-banner-women-kiss-dog {
+  .container {
+    position: relative;
+  }
+
+  @extend %common-banner-section;
+
+  .banner-img {
+    height: 378px;
+  }
+
+  .section-content {
+    @include flex(flex, column, flex-end);
+    @include banner-section-content(absolute, 40px, 692px, 400px);
+    text-align: right;
+
+    .section-title {
+      font-size: $text-3xl;
+    }
+
+    .section-subtitle {
+      font-size: $text-xl;
+      line-height: 54px;
+      margin-top: 2px;
+    }
+
+    .section-description {
+      font-size: $text-xs;
+      font-weight: $font-500;
+      line-height: 18px;
+      margin-top: 8px;
+    }
+
+    .btn-group {
+      margin-top: 24px;
+    }
+  }
+}
+
+.section-banner-adoption {
+  .container {
+    position: relative;
+  }
+
+  @extend %common-banner-section;
+
+  .banner-img {
+    height: 378px;
+  }
+
+  .section-content {
+    @include banner-section-content(absolute, 30px, 85px, 480px);
+
+    .section-title {
+      font-size: $text-3xl;
+
+      .btn-icon {
+        width: 42px;
+        height: 38px;
+      }
+    }
+
+    .section-subtitle {
+      font-size: $text-xl;
+      line-height: 54px;
+      margin-top: 2px;
+    }
+
+    .section-description {
+      font-size: $text-xs;
+      font-weight: $font-500;
+      line-height: 18px;
+      margin-top: 8px;
+    }
+
+    .btn-group {
+      margin-top: 42px;
+
+      .btn-align {
+        margin-right: 20px;
+      }
+
+      .btn-outline {
+        .btn-text {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
