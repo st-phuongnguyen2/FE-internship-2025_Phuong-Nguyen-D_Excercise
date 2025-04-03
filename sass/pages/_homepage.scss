@@ -1,7 +1,7 @@
 .section-banner {
   position: relative;
-  margin: 108px 0 25px 0;
 
+  margin: 108px 0 25px 0;
   @extend %common-banner-section;
 }
 
@@ -26,16 +26,19 @@
     }
 
     .section-subtitle {
+      margin-top: 2px;
+
       font-size: $text-xl;
       line-height: 54px;
-      margin-top: 2px;
     }
 
     .section-description {
+      margin-top: 8px;
+
       font-size: $text-xs;
       font-weight: $font-500;
       line-height: 18px;
-      margin-top: 8px;
+      
     }
 
     .btn-group {
@@ -68,16 +71,18 @@
     }
 
     .section-subtitle {
+      margin-top: 2px;
+
       font-size: $text-xl;
       line-height: 54px;
-      margin-top: 2px;
     }
 
     .section-description {
+      margin-top: 8px;
+
       font-size: $text-xs;
       font-weight: $font-500;
       line-height: 18px;
-      margin-top: 8px;
     }
 
     .btn-group {
