@@ -197,10 +197,10 @@ body {
   display: flex;
 }
 .header .section-actions .form-search {
-  background-color: #ffffff;
-  border-radius: 30px;
   width: 280px;
   margin-right: 14px;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 .header .section-actions .form-search .form-input {
   display: flex;

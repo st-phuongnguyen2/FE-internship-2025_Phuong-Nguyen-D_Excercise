@@ -46,10 +46,11 @@
     display: flex;
 
     .form-search {
+      width: 280px; 
+      margin-right: 14px;
+
       background-color: $white-color;
       border-radius: 30px;
-      width: 280px;
-      margin-right: 14px;
 
       .form-input {
         display: flex;
@@ -80,7 +81,9 @@
 
       .select-form {
         border: 0;
+
         background-color: $secondary-color;
+        
         font-size: $text-md;
       }
     }
