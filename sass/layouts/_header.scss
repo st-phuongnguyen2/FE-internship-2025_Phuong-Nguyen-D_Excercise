@@ -20,9 +20,6 @@
 
     .section-title {
       margin-right: 24px;
-      .logo-img {
-        height: 40px;
-      }
     }
 
     .list-nav {
@@ -46,7 +43,6 @@
     display: flex;
 
     .form-search {
-      width: 280px; 
       margin-right: 14px;
 
       background-color: $white-color;
@@ -83,7 +79,7 @@
         border: 0;
 
         background-color: $secondary-color;
-        
+
         font-size: $text-md;
       }
     }
