@@ -163,7 +163,7 @@ body {
   z-index: 1000;
   background-color: #fceed5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px 0px;
+  padding: 30px 0;
 }
 .header .section-body {
   display: flex;
@@ -178,7 +178,6 @@ body {
   margin-right: 24px;
 }
 .header .section-navigation .section-title .logo-img {
-  width: 115px;
   height: 40px;
 }
 .header .section-navigation .list-nav {
@@ -198,7 +197,7 @@ body {
   display: flex;
 }
 .header .section-actions .form-search {
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   border-radius: 30px;
   width: 280px;
   margin-right: 14px;
@@ -214,10 +213,6 @@ body {
   height: 20px;
   margin-right: 12px;
 }
-.header .section-actions .form-search .form-input .search-input {
-  border: none;
-  outline: none;
-}
 .header .section-actions .btn-join-community {
   margin-right: 15px;
 }
@@ -226,12 +221,11 @@ body {
   align-items: center;
 }
 .header .section-actions .dropdown-group .flag-icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 .header .section-actions .dropdown-group .select-form {
-  outline: none;
-  border: none;
+  border: 0;
   background-color: #fceed5;
   font-size: 16px;
 }
@@ -253,11 +247,11 @@ body {
   border-radius: 28px;
   padding: 8px;
   background-color: #00a7e7;
-  color: #fdfdfd;
+  color: #ffffff;
 }
 
 .btn {
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   color: #000000;
   border-radius: 57px;
   padding: 14px 28px;
@@ -266,12 +260,12 @@ body {
 
 .btn-primary {
   background-color: #003459;
-  color: #fdfdfd;
+  color: #ffffff;
 }
 
 .btn-outline {
   background-color: inherit;
-  outline: 1px solid #003459;
+  border: 1px solid #003459;
 }
 
 /*# sourceMappingURL=style.css.map */

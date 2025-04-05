@@ -21,7 +21,6 @@
     .section-title {
       margin-right: 24px;
       .logo-img {
-        width: 115px;
         height: 40px;
       }
     }
@@ -73,10 +72,12 @@
     .dropdown-group {
       display: flex;
       align-items: center;
+
       .flag-icon {
-        width: 24px;
-        height: 24px;
+        width: 16px;
+        height: 16px;
       }
+
       .select-form {
         border: 0;
         background-color: $secondary-color;
