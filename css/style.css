@@ -163,7 +163,6 @@ body {
 }
 .header .section-body {
   display: flex;
-  justify-content: space-between;
 }
 .header .section-navigation {
   display: flex;
@@ -191,6 +190,7 @@ body {
 }
 .header .section-actions .form-search {
   margin-right: 14px;
+  padding-right: 80px;
   background-color: #ffffff;
   border-radius: 30px;
 }
