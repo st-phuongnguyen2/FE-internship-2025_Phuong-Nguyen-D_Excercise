@@ -1,0 +1,14 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: $font-700;
+  font-size: $text-xs;
+  line-height: 16px;
+  border-radius: 28px;
+  padding: 8px;
+
+  background-color: $state-color;
+  color: $white-color;
+}
