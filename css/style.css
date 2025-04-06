@@ -157,9 +157,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  padding: 30px 0;
   background-color: #fceed5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
 }
 .header .section-body {
   display: flex;
@@ -191,8 +191,8 @@ body {
 .header .section-actions .form-search {
   margin-right: 14px;
   padding-right: 80px;
-  background-color: #ffffff;
   border-radius: 30px;
+  background-color: #ffffff;
 }
 .header .section-actions .form-search .form-input {
   display: flex;
@@ -207,22 +207,26 @@ body {
 }
 .header .section-actions .form-search .form-input .search-input {
   border: 0;
+  font-family: "SVN-Gilroy", sans-serif;
 }
 .header .section-actions .btn-join-community {
   margin-right: 15px;
+  font-weight: 700;
 }
 .header .section-actions .dropdown-group {
   display: flex;
   align-items: center;
 }
 .header .section-actions .dropdown-group .flag-icon {
-  width: 16px;
-  height: 16px;
+  width: 21px;
+  height: 21px;
 }
 .header .section-actions .dropdown-group .select-form {
   border: 0;
   background-color: #fceed5;
   font-size: 16px;
+  font-weight: 500;
+  font-family: "SVN-Gilroy", sans-serif;
 }
 
 .container {
@@ -246,6 +250,7 @@ body {
 }
 
 .btn {
+  font-family: "SVN-Gilroy", sans-serif;
   background-color: #ffffff;
   color: #000000;
   border-radius: 57px;
