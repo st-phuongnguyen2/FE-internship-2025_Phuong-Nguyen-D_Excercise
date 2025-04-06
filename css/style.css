@@ -101,10 +101,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -161,13 +157,12 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  padding: 30px 0;
   background-color: #fceed5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
 }
 .header .section-body {
   display: flex;
-  justify-content: space-between;
 }
 .header .section-navigation {
   display: flex;
@@ -176,10 +171,6 @@ body {
 }
 .header .section-navigation .section-title {
   margin-right: 24px;
-}
-.header .section-navigation .section-title .logo-img {
-  width: 115px;
-  height: 40px;
 }
 .header .section-navigation .list-nav {
   display: flex;
@@ -198,10 +189,10 @@ body {
   display: flex;
 }
 .header .section-actions .form-search {
-  background-color: #FDFDFD;
-  border-radius: 30px;
-  width: 280px;
   margin-right: 14px;
+  padding-right: 80px;
+  border-radius: 30px;
+  background-color: #ffffff;
 }
 .header .section-actions .form-search .form-input {
   display: flex;
@@ -216,23 +207,26 @@ body {
 }
 .header .section-actions .form-search .form-input .search-input {
   border: 0;
+  font-family: "SVN-Gilroy", sans-serif;
 }
 .header .section-actions .btn-join-community {
   margin-right: 15px;
+  font-weight: 700;
 }
 .header .section-actions .dropdown-group {
   display: flex;
   align-items: center;
 }
 .header .section-actions .dropdown-group .flag-icon {
-  width: 24px;
-  height: 24px;
+  width: 21px;
+  height: 21px;
 }
 .header .section-actions .dropdown-group .select-form {
-  outline: none;
-  border: none;
+  border: 0;
   background-color: #fceed5;
   font-size: 16px;
+  font-weight: 500;
+  font-family: "SVN-Gilroy", sans-serif;
 }
 
 .main {
@@ -308,11 +302,12 @@ body {
   border-radius: 28px;
   padding: 8px;
   background-color: #00a7e7;
-  color: #FDFDFD;
+  color: #fdfdfd;
 }
 
 .btn {
-  background-color: #FDFDFD;
+  font-family: "SVN-Gilroy", sans-serif;
+  background-color: #ffffff;
   color: #000000;
   border-radius: 57px;
   padding: 14px 28px;
@@ -321,7 +316,7 @@ body {
 
 .btn-primary {
   background-color: #003459;
-  color: #FDFDFD;
+  color: #fdfdfd;
 }
 
 .btn-outline {
