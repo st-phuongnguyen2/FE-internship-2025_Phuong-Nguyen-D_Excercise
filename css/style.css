@@ -246,12 +246,16 @@ body {
   padding: 0 16px;
 }
 
-.section-banner-adoption .banner-img, .section-banner-women-kiss-dog .banner-img, .section-banner .banner-img {
+.section-banner {
+  position: relative;
+  margin: 108px 0 25px 0;
+}
+.section-banner .banner-img {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
   object-fit: cover;
 }
-.section-banner-adoption .section-content, .section-banner-women-kiss-dog .section-content, .section-banner .section-content {
+.section-banner .section-content {
   display: flex;
   flex-direction: column;
   align-items: none;
@@ -261,34 +265,34 @@ body {
   left: 170px;
   max-width: 480px;
 }
-.section-banner-adoption .section-content .section-title, .section-banner-women-kiss-dog .section-content .section-title, .section-banner .section-content .section-title {
+.section-banner .section-content .section-title {
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
   color: #003459;
 }
-.section-banner-adoption .section-content .section-subtitle, .section-banner-women-kiss-dog .section-content .section-subtitle, .section-banner .section-content .section-subtitle {
+.section-banner .section-content .section-subtitle {
   display: block;
   margin-top: 4px;
   font-size: 46px;
   font-weight: 700;
   line-height: 60px;
 }
-.section-banner-adoption .section-content .section-description, .section-banner-women-kiss-dog .section-content .section-description, .section-banner .section-content .section-description {
+.section-banner .section-content .section-description {
   margin-top: 24px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: justify;
 }
-.section-banner-adoption .section-content .btn-group, .section-banner-women-kiss-dog .section-content .btn-group, .section-banner .section-content .btn-group {
+.section-banner .section-content .btn-group {
   display: flex;
   margin-top: 34px;
 }
-.section-banner-adoption .section-content .btn-group .btn-align, .section-banner-women-kiss-dog .section-content .btn-group .btn-align, .section-banner .section-content .btn-group .btn-align {
+.section-banner .section-content .btn-group .btn-align {
   margin-right: 20px;
 }
-.section-banner-adoption .section-content .btn-group .btn-align .btn-text, .section-banner-women-kiss-dog .section-content .btn-group .btn-align .btn-text, .section-banner .section-content .btn-group .btn-align .btn-text {
+.section-banner .section-content .btn-group .btn-align .btn-text {
   margin-right: 8px;
   color: #003459;
   font-weight: 500;
@@ -329,20 +333,15 @@ body {
 }
 
 .btn-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.section-banner {
-  position: relative;
-  margin: 108px 0 25px 0;
+  width: 18px;
+  height: 18px;
 }
 
 .section-banner-women-kiss-dog .container {
   position: relative;
 }
 .section-banner-women-kiss-dog .banner-img {
-  height: 378px;
+  max-height: 378px;
 }
 .section-banner-women-kiss-dog .section-content {
   display: flex;
@@ -376,7 +375,7 @@ body {
   position: relative;
 }
 .section-banner-adoption .banner-img {
-  height: 378px;
+  max-height: 378px;
 }
 .section-banner-adoption .section-content {
   position: absolute;
@@ -386,10 +385,6 @@ body {
 }
 .section-banner-adoption .section-content .section-title {
   font-size: 52px;
-}
-.section-banner-adoption .section-content .section-title .btn-icon {
-  width: 42px;
-  height: 38px;
 }
 .section-banner-adoption .section-content .section-subtitle {
   margin-top: 2px;
