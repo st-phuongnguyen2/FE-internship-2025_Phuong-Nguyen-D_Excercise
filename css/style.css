@@ -286,6 +286,10 @@ body {
 .section-banner .section-content .btn-group .btn:first-child {
   margin-right: 20px;
 }
+.section-banner .section-content .btn-group .btn-icon {
+  width: 24px;
+  height: 24px;
+}
 .section-banner .section-content .btn-group .btn-text {
   margin-right: 8px;
   color: #003459;
