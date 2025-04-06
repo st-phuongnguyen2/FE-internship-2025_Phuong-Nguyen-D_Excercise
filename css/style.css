@@ -289,10 +289,10 @@ body {
   display: flex;
   margin-top: 34px;
 }
-.section-banner .section-content .btn-group .btn-align {
+.section-banner .section-content .btn-group .btn:first-child {
   margin-right: 20px;
 }
-.section-banner .section-content .btn-group .btn-align .btn-text {
+.section-banner .section-content .btn-group .btn-text {
   margin-right: 8px;
   color: #003459;
   font-weight: 500;
@@ -386,6 +386,10 @@ body {
 .section-banner-adoption .section-content .section-title {
   font-size: 52px;
 }
+.section-banner-adoption .section-content .section-title .btn-icon {
+  width: 42px;
+  height: 38px;
+}
 .section-banner-adoption .section-content .section-subtitle {
   margin-top: 2px;
   font-size: 36px;
@@ -399,12 +403,6 @@ body {
 }
 .section-banner-adoption .section-content .btn-group {
   margin-top: 42px;
-}
-.section-banner-adoption .section-content .btn-group .btn-align {
-  margin-right: 20px;
-}
-.section-banner-adoption .section-content .btn-group .btn-outline .btn-text {
-  margin-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

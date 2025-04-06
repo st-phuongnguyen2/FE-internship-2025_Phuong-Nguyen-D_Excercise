@@ -46,15 +46,15 @@
 
       margin-top: 34px;
 
-      .btn-align {
+      & .btn:first-child {
         margin-right: 20px;
+      }
 
-        .btn-text {
-          margin-right: 8px;
+      .btn-text {
+        margin-right: 8px;
 
-          color: $primary-color;
-          font-weight: $font-500;
-        }
+        color: $primary-color;
+        font-weight: $font-500;
       }
     }
   }

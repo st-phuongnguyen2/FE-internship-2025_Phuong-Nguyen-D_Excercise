@@ -51,6 +51,11 @@
 
     .section-title {
       font-size: $text-3xl;
+
+      .btn-icon {
+        width: 42px;
+        height: 38px;
+      }
     }
 
     .section-subtitle {
@@ -70,16 +75,6 @@
 
     .btn-group {
       margin-top: 42px;
-
-      .btn-align {
-        margin-right: 20px;
-      }
-
-      .btn-outline {
-        .btn-text {
-          margin-right: 8px;
-        }
-      }
     }
   }
 }
