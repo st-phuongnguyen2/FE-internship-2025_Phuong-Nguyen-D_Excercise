@@ -1,4 +1,4 @@
-.section-banner {
+.main-banner {
   position: relative;
 
   margin: 108px 0 25px 0;
@@ -39,12 +39,73 @@
       font-weight: $font-500;
       line-height: 24px;
       text-align: justify;
+
+      color: $neutral-color-80;
     }
 
     .btn-group {
       display: flex;
 
       margin-top: 34px;
+
+      & .btn:first-child {
+        margin-right: 20px;
+      }
+
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .btn-text {
+        margin-right: 8px;
+
+        color: $primary-color;
+        font-weight: $font-500;
+      }
+    }
+  }
+}
+
+.sub-banner {
+  .container {
+    position: relative;
+  }
+
+  .banner-img {
+    max-height: 378px;
+  }
+
+  .section-content {
+    .section-title {
+      font-size: $text-3xl;
+      font-weight: $font-800;
+
+      color: $primary-color;
+    }
+
+    .section-subtitle {
+      display: block;
+
+      margin-top: 2px;
+
+      font-size: $text-xl;
+      font-weight: $font-700;
+      line-height: 54px;
+    }
+
+    .section-description {
+      margin-top: 8px;
+
+      font-size: $text-xs;
+      font-weight: $font-500;
+      line-height: 18px;
+
+      color: $neutral-color-80;
+    }
+
+    .btn-group {
+      display: flex;
 
       & .btn:first-child {
         margin-right: 20px;

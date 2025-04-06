@@ -240,16 +240,16 @@ body {
   padding: 0 16px;
 }
 
-.section-banner {
+.main-banner {
   position: relative;
   margin: 108px 0 25px 0;
 }
-.section-banner .banner-img {
+.main-banner .banner-img {
   width: 100%;
   max-height: 600px;
   object-fit: cover;
 }
-.section-banner .section-content {
+.main-banner .section-content {
   display: flex;
   flex-direction: column;
   align-items: none;
@@ -259,38 +259,80 @@ body {
   left: 170px;
   max-width: 480px;
 }
-.section-banner .section-content .section-title {
+.main-banner .section-content .section-title {
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
   color: #003459;
 }
-.section-banner .section-content .section-subtitle {
+.main-banner .section-content .section-subtitle {
   display: block;
   margin-top: 4px;
   font-size: 46px;
   font-weight: 700;
   line-height: 60px;
 }
-.section-banner .section-content .section-description {
+.main-banner .section-content .section-description {
   margin-top: 24px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: justify;
+  color: #242B33;
 }
-.section-banner .section-content .btn-group {
+.main-banner .section-content .btn-group {
   display: flex;
   margin-top: 34px;
 }
-.section-banner .section-content .btn-group .btn:first-child {
+.main-banner .section-content .btn-group .btn:first-child {
   margin-right: 20px;
 }
-.section-banner .section-content .btn-group .btn-icon {
+.main-banner .section-content .btn-group .btn-icon {
   width: 24px;
   height: 24px;
 }
-.section-banner .section-content .btn-group .btn-text {
+.main-banner .section-content .btn-group .btn-text {
+  margin-right: 8px;
+  color: #003459;
+  font-weight: 500;
+}
+
+.sub-banner .container {
+  position: relative;
+}
+.sub-banner .banner-img {
+  max-height: 378px;
+}
+.sub-banner .section-content .section-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: #003459;
+}
+.sub-banner .section-content .section-subtitle {
+  display: block;
+  margin-top: 2px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+.sub-banner .section-content .section-description {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #242B33;
+}
+.sub-banner .section-content .btn-group {
+  display: flex;
+}
+.sub-banner .section-content .btn-group .btn:first-child {
+  margin-right: 20px;
+}
+.sub-banner .section-content .btn-group .btn-icon {
+  width: 24px;
+  height: 24px;
+}
+.sub-banner .section-content .btn-group .btn-text {
   margin-right: 8px;
   color: #003459;
   font-weight: 500;
@@ -336,12 +378,6 @@ body {
   height: 18px;
 }
 
-.section-banner-women-kiss-dog .container {
-  position: relative;
-}
-.section-banner-women-kiss-dog .banner-img {
-  max-height: 378px;
-}
 .section-banner-women-kiss-dog .section-content {
   display: flex;
   flex-direction: column;
@@ -352,53 +388,19 @@ body {
   max-width: 400px;
   text-align: right;
 }
-.section-banner-women-kiss-dog .section-content .section-title {
-  font-size: 52px;
-}
-.section-banner-women-kiss-dog .section-content .section-subtitle {
-  margin-top: 2px;
-  font-size: 36px;
-  line-height: 54px;
-}
-.section-banner-women-kiss-dog .section-content .section-description {
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-}
 .section-banner-women-kiss-dog .section-content .btn-group {
   margin-top: 24px;
 }
 
-.section-banner-adoption .container {
-  position: relative;
-}
-.section-banner-adoption .banner-img {
-  max-height: 378px;
-}
 .section-banner-adoption .section-content {
   position: absolute;
   top: 30px;
   left: 85px;
   max-width: 480px;
 }
-.section-banner-adoption .section-content .section-title {
-  font-size: 52px;
-}
 .section-banner-adoption .section-content .section-title .btn-icon {
   width: 42px;
   height: 38px;
-}
-.section-banner-adoption .section-content .section-subtitle {
-  margin-top: 2px;
-  font-size: 36px;
-  line-height: 54px;
-}
-.section-banner-adoption .section-content .section-description {
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
 }
 .section-banner-adoption .section-content .btn-group {
   margin-top: 42px;

@@ -1,35 +1,8 @@
 .section-banner-women-kiss-dog {
-  .container {
-    position: relative;
-  }
-
-  .banner-img {
-    max-height: 378px;
-  }
-
   .section-content {
     @include flex(flex, column, flex-end);
     @include banner-section-content(absolute, 40px, 692px, 400px);
     text-align: right;
-
-    .section-title {
-      font-size: $text-3xl;
-    }
-
-    .section-subtitle {
-      margin-top: 2px;
-
-      font-size: $text-xl;
-      line-height: 54px;
-    }
-
-    .section-description {
-      margin-top: 8px;
-
-      font-size: $text-xs;
-      font-weight: $font-500;
-      line-height: 18px;
-    }
 
     .btn-group {
       margin-top: 24px;
@@ -38,39 +11,14 @@
 }
 
 .section-banner-adoption {
-  .container {
-    position: relative;
-  }
-
-  .banner-img {
-    max-height: 378px;
-  }
-
   .section-content {
     @include banner-section-content(absolute, 30px, 85px, 480px);
 
     .section-title {
-      font-size: $text-3xl;
-
       .btn-icon {
         width: 42px;
         height: 38px;
       }
-    }
-
-    .section-subtitle {
-      margin-top: 2px;
-
-      font-size: $text-xl;
-      line-height: 54px;
-    }
-
-    .section-description {
-      margin-top: 8px;
-
-      font-size: $text-xs;
-      font-weight: $font-500;
-      line-height: 18px;
     }
 
     .btn-group {
