@@ -1,17 +1,24 @@
 .btn {
-  background-color: $white-color;
-  color: $black-color;
-  border-radius: 57px;
   padding: 14px 28px;
+  border-radius: 57px;
+
+  background-color: $neutral-white-color;
+  
   font-size: $text-md;
+  color: $black-color;
 }
 
 .btn-primary {
   background-color: $primary-color;
-  color: $white-color;
+
+  color: $neutral-white-color;
 }
 
 .btn-outline {
-  background-color: inherit;
   border: 1px solid $primary-color;
+
+  background-color: inherit;
+
+  color: $primary-color;
+  
 }
