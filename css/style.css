@@ -240,14 +240,32 @@ body {
   padding: 0 16px;
 }
 
+.section-banner .banner-img {
+  width: 100%;
+  object-fit: cover;
+}
+.section-banner .btn-group {
+  display: flex;
+}
+.section-banner .btn-group .btn:first-child {
+  margin-right: 20px;
+}
+.section-banner .btn-group .btn-icon {
+  width: 24px;
+  height: 24px;
+}
+.section-banner .btn-group .btn-text {
+  margin-right: 8px;
+  color: #003459;
+  font-weight: 500;
+}
+
 .main-banner {
   position: relative;
   margin: 108px 0 25px 0;
 }
 .main-banner .banner-img {
-  width: 100%;
   max-height: 600px;
-  object-fit: cover;
 }
 .main-banner .section-content {
   display: flex;
@@ -277,24 +295,10 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  text-align: justify;
   color: #242B33;
 }
 .main-banner .section-content .btn-group {
-  display: flex;
   margin-top: 34px;
-}
-.main-banner .section-content .btn-group .btn:first-child {
-  margin-right: 20px;
-}
-.main-banner .section-content .btn-group .btn-icon {
-  width: 24px;
-  height: 24px;
-}
-.main-banner .section-content .btn-group .btn-text {
-  margin-right: 8px;
-  color: #003459;
-  font-weight: 500;
 }
 
 .sub-banner .container-content {
@@ -321,21 +325,6 @@ body {
   font-weight: 500;
   line-height: 18px;
   color: #242B33;
-}
-.sub-banner .section-content .btn-group {
-  display: flex;
-}
-.sub-banner .section-content .btn-group .btn:first-child {
-  margin-right: 20px;
-}
-.sub-banner .section-content .btn-group .btn-icon {
-  width: 24px;
-  height: 24px;
-}
-.sub-banner .section-content .btn-group .btn-text {
-  margin-right: 8px;
-  color: #003459;
-  font-weight: 500;
 }
 
 .badge {
