@@ -1,9 +1,10 @@
 .btn {
-  padding: 14px 28px;
+  font-family: $font-primary;
+  background-color: $white-color;
+  color: $black-color;
   border-radius: 57px;
+  padding: 14px 28px;
 
-  background-color: $neutral-white-color;
-  
   font-size: $text-md;
   color: $black-color;
 }
@@ -20,5 +21,4 @@
   background-color: inherit;
 
   color: $primary-color;
-  
 }

@@ -5,12 +5,13 @@
   right: 0;
   z-index: 1000;
 
+  padding: 30px 0;
+
   background-color: $secondary-color;
   box-shadow: $shadow-color-01;
-  padding: 30px 0;
+
   .section-body {
     display: flex;
-    justify-content: space-between;
   }
 
   .section-navigation {
@@ -21,9 +22,6 @@
 
     .section-title {
       margin-right: 24px;
-      .logo-img {
-        height: 40px;
-      }
     }
 
     .list-nav {
@@ -48,14 +46,14 @@
 
     .form-search {
       margin-right: 14px;
+      padding-right: 80px;
+      border-radius: 30px;
 
       background-color: $white-color;
-      border-radius: 30px;
 
       .form-input {
         display: flex;
         align-items: center;
-        
         height: 100%;
         padding: 12px 16px;
 
@@ -64,11 +62,19 @@
           height: 20px;
           margin-right: 12px;
         }
+
+        .search-input {
+          border: 0;
+
+          font-family: $font-primary;
+        }
       }
     }
 
     .btn-join-community {
       margin-right: 15px;
+
+      font-weight: $font-700;
     }
 
     .dropdown-group {
@@ -76,8 +82,8 @@
       align-items: center;
 
       .flag-icon {
-        width: 16px;
-        height: 16px;
+        width: 21px;
+        height: 21px;
       }
 
       .select-form {
@@ -86,6 +92,8 @@
         background-color: $secondary-color;
 
         font-size: $text-md;
+        font-weight: $font-500;
+        font-family: $font-primary;
       }
     }
   }
