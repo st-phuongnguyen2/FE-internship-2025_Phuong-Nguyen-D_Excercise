@@ -205,6 +205,9 @@ body {
   height: 20px;
   margin-right: 12px;
 }
+.header .section-actions .form-search .form-input .search-input {
+  border: 0;
+}
 .header .section-actions .btn-join-community {
   margin-right: 15px;
 }
