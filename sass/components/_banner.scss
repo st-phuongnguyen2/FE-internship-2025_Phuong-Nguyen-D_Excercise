@@ -12,7 +12,7 @@
 
   .section-content {
     @include flex(flex, column, none, center);
-    @include banner-section-content(absolute, 80px, 170px, 480px);
+    @include set-banner-position(absolute, 80px, 170px, 480px);
 
     .section-title {
       font-size: $text-4xl;
@@ -68,7 +68,7 @@
 }
 
 .sub-banner {
-  .container {
+  .container-content {
     position: relative;
   }
 
