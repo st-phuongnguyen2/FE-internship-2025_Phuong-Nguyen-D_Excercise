@@ -1,0 +1,101 @@
+.footer {
+  padding: 80px 0 40px 0;
+  border-radius: 20px;
+
+  background-color: $secondary-color;
+  
+  .section-subscribe {
+    display: flex;
+
+    padding: 30px;
+    border-radius: 16px;
+
+    background-color: $primary-color;
+    
+    .form-register {
+      display: flex;
+      justify-content: space-between;
+
+      width: 100%;
+
+      .form-register-title {
+        flex-basis: 389px;
+
+        font-weight: $font-700;
+        font-size: $text-lg;
+        color: $neutral-white-color;
+        line-height: 36px;
+      }
+
+      .form-input {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 12px;
+        
+        flex-basis: 707px;
+        padding: 12px;
+        border-radius: 14px;
+
+        background-color: $neutral-white-color;
+
+        .email-input {
+          flex-basis: 75%;
+          padding: 0 20px;
+          border-radius: 8px;
+
+          opacity: 0.7;
+        }
+
+        .btn-subscribe {
+          flex-basis: 25%;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccd1d2;
+
+    .list-info {
+      list-style: none;
+      display: flex;
+      column-gap: 60px;
+      padding: 20px 0;
+
+      .list-item-link {
+        font-weight: $font-500;
+        font-size: $text-md;
+        color: $black-color;
+        text-decoration: none;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .section-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px 0;
+
+    .section-description {
+      display: flex;
+      column-gap: 30px;
+
+      font-weight: $font-500;
+      font-size: $text-sm;
+      color: $neutral-color-60;
+      line-height: 20px;
+    }
+
+    .policy-link {
+      color: $black-color;
+    }
+  }
+}

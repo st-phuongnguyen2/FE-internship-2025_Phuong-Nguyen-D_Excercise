@@ -222,11 +222,90 @@ body {
   font-size: 16px;
 }
 
+.footer {
+  padding: 80px 0 40px 0;
+  border-radius: 20px;
+  background-color: #fceed5;
+}
+.footer .section-subscribe {
+  display: flex;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #003459;
+}
+.footer .section-subscribe .form-register {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .section-subscribe .form-register .form-register-title {
+  flex-basis: 389px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fdfdfd;
+  line-height: 36px;
+}
+.footer .section-subscribe .form-register .form-input {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+  flex-basis: 707px;
+  padding: 12px;
+  border-radius: 14px;
+  background-color: #fdfdfd;
+}
+.footer .section-subscribe .form-register .form-input .email-input {
+  flex-basis: 75%;
+  padding: 0 20px;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+.footer .section-subscribe .form-register .form-input .btn-subscribe {
+  flex-basis: 25%;
+  border-radius: 8px;
+}
+.footer .section-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccd1d2;
+}
+.footer .section-content .list-info {
+  list-style: none;
+  display: flex;
+  column-gap: 60px;
+  padding: 20px 0;
+}
+.footer .section-content .list-info .list-item-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  line-height: 24px;
+}
+.footer .section-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.footer .section-info .section-description {
+  display: flex;
+  column-gap: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #667479;
+  line-height: 20px;
+}
+.footer .section-info .policy-link {
+  color: #000000;
+}
+
 .container {
-  max-width: 1240px;
+  max-width: 1212px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 .badge {
