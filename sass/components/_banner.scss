@@ -1,4 +1,90 @@
 .section-banner {
+  &.main-banner {
+    position: relative;
+
+    padding-top: 112px;
+
+    .banner-img {
+      max-height: 600px;
+    }
+
+    .section-content {
+      @include flex(flex, column, none, center);
+      @include set-element-position(absolute, 180px, 130px, 480px);
+
+      .section-title {
+        font-size: $text-4xl;
+        font-weight: $font-800;
+        line-height: 68px;
+
+        color: $primary-color;
+      }
+
+      .section-subtitle {
+        display: block;
+
+        margin-top: 4px;
+
+        font-size: $text-2xl;
+        font-weight: $font-700;
+        line-height: 60px;
+      }
+
+      .section-description {
+        margin-top: 24px;
+
+        font-size: $text-md;
+        font-weight: $font-500;
+        line-height: 24px;
+
+        color: $neutral-color-80;
+      }
+
+      .btn-group {
+        margin-top: 34px;
+      }
+    }
+  }
+
+  &.sub-banner {
+    .container-content {
+      position: relative;
+    }
+
+    .banner-img {
+      max-height: 378px;
+    }
+
+    .section-content {
+      .section-title {
+        font-size: $text-3xl;
+        font-weight: $font-800;
+
+        color: $primary-color;
+      }
+
+      .section-subtitle {
+        display: block;
+
+        margin-top: 2px;
+
+        font-size: $text-xl;
+        font-weight: $font-700;
+        line-height: 54px;
+      }
+
+      .section-description {
+        margin-top: 8px;
+
+        font-size: $text-xs;
+        font-weight: $font-500;
+        line-height: 18px;
+
+        color: $neutral-color-80;
+      }
+    }
+  }
+
   .banner-img {
     width: 100%;
 
@@ -12,9 +98,10 @@
       margin-right: 20px;
     }
 
-    .btn-icon {
-      width: 24px;
-      height: 24px;
+    .rounded-border {
+      @include flex($display: flex, $align: center, $justify: center);
+      border: 1px solid $primary-color;
+      border-radius: 50%;
     }
 
     .btn-text {
@@ -22,92 +109,6 @@
 
       color: $primary-color;
       font-weight: $font-500;
-    }
-  }
-}
-
-.main-banner {
-  position: relative;
-
-  margin: 108px 0 25px 0;
-
-  .banner-img {
-    max-height: 600px;
-  }
-
-  .section-content {
-    @include flex(flex, column, none, center);
-    @include set-element-position(absolute, 80px, 170px, 480px);
-
-    .section-title {
-      font-size: $text-4xl;
-      font-weight: $font-800;
-      line-height: 68px;
-
-      color: $primary-color;
-    }
-
-    .section-subtitle {
-      display: block;
-
-      margin-top: 4px;
-
-      font-size: $text-2xl;
-      font-weight: $font-700;
-      line-height: 60px;
-    }
-
-    .section-description {
-      margin-top: 24px;
-
-      font-size: $text-md;
-      font-weight: $font-500;
-      line-height: 24px;
-
-      color: $neutral-color-80;
-    }
-
-    .btn-group {
-      margin-top: 34px;
-    }
-  }
-}
-
-.sub-banner {
-  .container-content {
-    position: relative;
-  }
-
-  .banner-img {
-    max-height: 378px;
-  }
-
-  .section-content {
-    .section-title {
-      font-size: $text-3xl;
-      font-weight: $font-800;
-
-      color: $primary-color;
-    }
-
-    .section-subtitle {
-      display: block;
-
-      margin-top: 2px;
-
-      font-size: $text-xl;
-      font-weight: $font-700;
-      line-height: 54px;
-    }
-
-    .section-description {
-      margin-top: 8px;
-
-      font-size: $text-xs;
-      font-weight: $font-500;
-      line-height: 18px;
-
-      color: $neutral-color-80;
     }
   }
 }

@@ -182,8 +182,8 @@ body {
   padding-right: 0;
 }
 .header .section-navigation .list-nav .list-item-link {
-  color: #003459;
   font-weight: 700;
+  color: #003459;
 }
 .header .section-actions {
   display: flex;
@@ -229,10 +229,6 @@ body {
   font-family: "SVN-Gilroy", sans-serif;
 }
 
-.main {
-  margin-top: 70px;
-}
-
 .container {
   max-width: 1212px;
   width: 100%;
@@ -240,6 +236,71 @@ body {
   padding: 0 16px;
 }
 
+.section-banner.main-banner {
+  position: relative;
+  padding-top: 112px;
+}
+.section-banner.main-banner .banner-img {
+  max-height: 600px;
+}
+.section-banner.main-banner .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  position: absolute;
+  top: 180px;
+  left: 130px;
+  max-width: 480px;
+}
+.section-banner.main-banner .section-content .section-title {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  color: #003459;
+}
+.section-banner.main-banner .section-content .section-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.section-banner.main-banner .section-content .section-description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #242B33;
+}
+.section-banner.main-banner .section-content .btn-group {
+  margin-top: 34px;
+}
+.section-banner.sub-banner .container-content {
+  position: relative;
+}
+.section-banner.sub-banner .banner-img {
+  max-height: 378px;
+}
+.section-banner.sub-banner .section-content .section-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: #003459;
+}
+.section-banner.sub-banner .section-content .section-subtitle {
+  display: block;
+  margin-top: 2px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+.section-banner.sub-banner .section-content .section-description {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #242B33;
+}
 .section-banner .banner-img {
   width: 100%;
   object-fit: cover;
@@ -250,81 +311,17 @@ body {
 .section-banner .btn-group .btn:first-child {
   margin-right: 20px;
 }
-.section-banner .btn-group .btn-icon {
-  width: 24px;
-  height: 24px;
+.section-banner .btn-group .rounded-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  border-radius: 50%;
 }
 .section-banner .btn-group .btn-text {
   margin-right: 8px;
   color: #003459;
   font-weight: 500;
-}
-
-.main-banner {
-  position: relative;
-  margin: 108px 0 25px 0;
-}
-.main-banner .banner-img {
-  max-height: 600px;
-}
-.main-banner .section-content {
-  display: flex;
-  flex-direction: column;
-  align-items: none;
-  justify-content: center;
-  position: absolute;
-  top: 80px;
-  left: 170px;
-  max-width: 480px;
-}
-.main-banner .section-content .section-title {
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 68px;
-  color: #003459;
-}
-.main-banner .section-content .section-subtitle {
-  display: block;
-  margin-top: 4px;
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 60px;
-}
-.main-banner .section-content .section-description {
-  margin-top: 24px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #242B33;
-}
-.main-banner .section-content .btn-group {
-  margin-top: 34px;
-}
-
-.sub-banner .container-content {
-  position: relative;
-}
-.sub-banner .banner-img {
-  max-height: 378px;
-}
-.sub-banner .section-content .section-title {
-  font-size: 52px;
-  font-weight: 800;
-  color: #003459;
-}
-.sub-banner .section-content .section-subtitle {
-  display: block;
-  margin-top: 2px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 54px;
-}
-.sub-banner .section-content .section-description {
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #242B33;
 }
 
 .badge {
