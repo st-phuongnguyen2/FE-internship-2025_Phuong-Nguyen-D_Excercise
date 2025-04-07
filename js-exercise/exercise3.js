@@ -11,7 +11,7 @@ function paginate(totalPages, currentPage) {
 
   if (totalPages >= maxDisplay) {
     if (rightDistance < leftDistance && rightDistance <= maxMargin) {
-      console.log('HERE rightDistance');
+      console.log('HERE rightDistance and three dots on the left');
       return Array.from({ length: maxDisplay }, (item, i) => {
         if (i >= 2) {
           const page = totalPages - maxMargin - 1 + i;
@@ -21,15 +21,16 @@ function paginate(totalPages, currentPage) {
             showDot: false
           };
         } else {
+          const isDot = totalPages > maxDisplay && i === 1;
           return {
-            page: totalPages > maxDisplay && i === 1 ? '...' : i + 1,
-            isCurrent: currentPage === i + 1,
-            showDot: totalPages > maxDisplay && i === 1 ? true : false
+            page: isDot ? '...' : i + 1,
+            isCurrent: false,
+            showDot: isDot === 1
           };
         }
       });
     } else if (leftDistance < rightDistance && leftDistance <= maxMargin) {
-      console.log('HERE leftDistance');
+      console.log('HERE leftDistance and three dots on the right');
       return Array.from({ length: maxDisplay }, (item, i) => {
         if (i === 0) {
           return {
@@ -44,17 +45,16 @@ function paginate(totalPages, currentPage) {
             showDot: false
           };
         } else {
+          const isDot = totalPages > maxDisplay && i === maxDisplay - 2;
           return {
-            page:
-              totalPages > maxDisplay && i === maxDisplay - 2 ? '...' : i + 1,
+            page: isDot ? '...' : i + 1,
             isCurrent: currentPage === i + 1,
-            showDot:
-              totalPages > maxDisplay && i === maxDisplay - 2 ? true : false
+            showDot: isDot
           };
         }
       });
     } else {
-      console.log('HERE middle');
+      console.log('HERE middle and three dots on both left and right side');
       return Array.from({ length: maxDisplay }, (item, i) => {
         if (i === 0) {
           return {
