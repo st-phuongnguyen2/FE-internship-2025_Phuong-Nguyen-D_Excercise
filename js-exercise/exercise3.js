@@ -17,10 +17,11 @@ function paginate(totalPages, currentPage) {
       pagination.push({ page: 1, isCurrent: false, showDots: false });
       pagination.push({ page: '...', isCurrent: false, showDots: true });
 
-      for (let i = 2; i < maxDisplay; i++) {
+      for (let i = 0; i < maxDisplay - 2; i++) {
+        const page = totalPages - 4 + i;
         pagination.push({
-          page: i,
-          isCurrent: currentPage === i,
+          page,
+          isCurrent: currentPage === page,
           showDots: false
         });
       }
@@ -74,4 +75,4 @@ function paginate(totalPages, currentPage) {
   return pagination;
 }
 
-console.log('exercise 3:', paginate(3, 2));
+console.log('exercise 3:', paginate(9, 3));
