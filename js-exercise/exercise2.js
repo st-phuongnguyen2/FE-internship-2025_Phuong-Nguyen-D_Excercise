@@ -41,4 +41,4 @@ function calculateGroupAverage(students) {
   return groupStudents;
 }
 
-console.log(calculateGroupAverage(students));
+console.log('exercise 2:', calculateGroupAverage(students));

@@ -56,5 +56,5 @@ function groupByAgeUsingReduce(users) {
   }, newUser);
 }
 
-console.log(groupByAgeUsingForEach(users));
-console.log(groupByAgeUsingReduce(users));
+console.log('exercise 1:', groupByAgeUsingForEach(users));
+console.log('exercise 1:', groupByAgeUsingReduce(users));
