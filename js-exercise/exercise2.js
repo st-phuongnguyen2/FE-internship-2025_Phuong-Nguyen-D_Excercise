@@ -22,13 +22,15 @@ const students = [
 function calculateGroupAverage(students) {
   const groupStudents = {};
 
-  students.forEach((item) => {
-    if (groupStudents[item.group]) {
-      groupStudents[item.group].push(item.score);
+  students.reduce((acc, cur) => {
+    if (acc[cur.group]) {
+      acc[cur.group].push(cur.score);
     } else {
-      groupStudents[item.group] = [item.score];
+      acc[cur.group] = [cur.score];
     }
-  });
+
+    return acc;
+  }, groupStudents);
 
   for (const key in groupStudents) {
     const sum = groupStudents[key].reduce((acc, cur) => {
