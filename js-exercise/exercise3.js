@@ -13,6 +13,7 @@ function paginate(totalPages, currentPage) {
 
   if (totalPages > maxDisplay) {
     if (rightDistance < leftDistance && rightDistance < maxMargin) {
+      console.log('HERE rightDistance and three dots on the left');
       pagination.push({ page: 1, isCurrent: false, showDots: false });
       pagination.push({ page: '...', isCurrent: false, showDots: true });
 
@@ -24,6 +25,7 @@ function paginate(totalPages, currentPage) {
         });
       }
     } else if (leftDistance < rightDistance && leftDistance < maxMargin) {
+      console.log('HERE leftDistance and three dots on the right');
       for (let i = 1; i <= maxDisplay - 2; i++) {
         pagination.push({
           page: i,
@@ -39,6 +41,7 @@ function paginate(totalPages, currentPage) {
         showDots: false
       });
     } else {
+      console.log('HERE middle and three dots on both left and right side');
       pagination.push({ page: 1, isCurrent: false, showDots: false });
       pagination.push({ page: '...', isCurrent: false, showDots: true });
 
