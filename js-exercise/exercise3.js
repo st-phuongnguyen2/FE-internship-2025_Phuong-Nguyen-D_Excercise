@@ -4,13 +4,13 @@ function paginate(totalPages, currentPage) {
   }
 
   const maxDisplay = 7;
-  const maxMargin = maxDisplay - 2;
+  const maxMargin = maxDisplay - 3;
 
   const rightDistance = Math.abs(totalPages - currentPage);
   const leftDistance = Math.abs(1 - currentPage);
 
   if (totalPages >= maxDisplay) {
-    if (rightDistance < leftDistance && rightDistance <= maxMargin) {
+    if (rightDistance < leftDistance && rightDistance < maxMargin) {
       console.log('HERE rightDistance and three dots on the left');
       return Array.from({ length: maxDisplay }, (item, i) => {
         if (i >= 2) {
@@ -29,7 +29,7 @@ function paginate(totalPages, currentPage) {
           };
         }
       });
-    } else if (leftDistance < rightDistance && leftDistance <= maxMargin) {
+    } else if (leftDistance < rightDistance && leftDistance < maxMargin) {
       console.log('HERE leftDistance and three dots on the right');
       return Array.from({ length: maxDisplay }, (item, i) => {
         if (i === 0) {
@@ -95,4 +95,4 @@ function paginate(totalPages, currentPage) {
   }
 }
 
-console.log('exercise 3:', paginate(15, 3));
+console.log('exercise 3:', paginate(10, 4));
