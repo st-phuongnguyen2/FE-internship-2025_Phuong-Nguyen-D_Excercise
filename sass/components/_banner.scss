@@ -1,4 +1,49 @@
 .section-banner {
+  .section-content {
+    .section-title {
+      color: $primary-color;
+    }
+
+    .section-subtitle {
+      display: block;
+
+      font-weight: $font-700;
+    }
+
+    .section-description {
+      font-weight: $font-500;
+
+      color: $neutral-color-80;
+    }
+  }
+
+  .banner-img {
+    width: 100%;
+
+    object-fit: cover;
+  }
+
+  .btn-group {
+    display: flex;
+
+    & .btn:first-child {
+      margin-right: 20px;
+    }
+
+    .rounded-border {
+      @include flex($display: flex, $align: center, $justify: center);
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+    }
+
+    .btn-text {
+      margin-right: 8px;
+
+      color: $primary-color;
+      font-weight: $font-500;
+    }
+  }
+
   &.main-banner {
     position: relative;
 
@@ -66,51 +111,6 @@
         font-size: $text-xs;
         line-height: 18px;
       }
-    }
-  }
-
-  .section-content {
-    .section-title {
-      color: $primary-color;
-    }
-
-    .section-subtitle {
-      display: block;
-
-      font-weight: $font-700;
-    }
-
-    .section-description {
-      font-weight: $font-500;
-
-      color: $neutral-color-80;
-    }
-  }
-
-  .banner-img {
-    width: 100%;
-
-    object-fit: cover;
-  }
-
-  .btn-group {
-    display: flex;
-
-    & .btn:first-child {
-      margin-right: 20px;
-    }
-
-    .rounded-border {
-      @include flex($display: flex, $align: center, $justify: center);
-      border: 1px solid $primary-color;
-      border-radius: 50%;
-    }
-
-    .btn-text {
-      margin-right: 8px;
-
-      color: $primary-color;
-      font-weight: $font-500;
     }
   }
 }
