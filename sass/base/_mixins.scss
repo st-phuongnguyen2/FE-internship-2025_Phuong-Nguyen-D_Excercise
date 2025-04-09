@@ -24,7 +24,12 @@
   }
 }
 
-@mixin set-element-position($position, $top, $left, $maxWidth) {
+@mixin set-element-position(
+  $position: false,
+  $top: false,
+  $left: false,
+  $maxWidth: false
+) {
   position: $position;
   top: $top;
   left: $left;

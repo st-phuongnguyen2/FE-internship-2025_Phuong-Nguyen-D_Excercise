@@ -236,6 +236,43 @@ body {
   padding: 0 16px;
 }
 
+.section-banner .section-content {
+  display: flex;
+  flex-direction: column;
+}
+.section-banner .section-content .section-title {
+  color: #003459;
+}
+.section-banner .section-content .section-subtitle {
+  display: block;
+  font-weight: 700;
+}
+.section-banner .section-content .section-description {
+  font-weight: 500;
+  color: #242B33;
+}
+.section-banner .banner-img {
+  width: 100%;
+  object-fit: cover;
+}
+.section-banner .btn-group {
+  display: flex;
+}
+.section-banner .btn-group .btn:first-child {
+  margin-right: 20px;
+}
+.section-banner .btn-group .rounded-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  border-radius: 50%;
+}
+.section-banner .btn-group .btn-text {
+  margin-right: 8px;
+  color: #003459;
+  font-weight: 500;
+}
 .section-banner.main-banner {
   position: relative;
   padding-top: 112px;
@@ -244,9 +281,6 @@ body {
   max-height: 600px;
 }
 .section-banner.main-banner .section-content {
-  display: flex;
-  flex-direction: column;
-  align-items: none;
   justify-content: center;
   position: absolute;
   top: 180px;
@@ -291,39 +325,6 @@ body {
   font-size: 12px;
   line-height: 18px;
 }
-.section-banner .section-content .section-title {
-  color: #003459;
-}
-.section-banner .section-content .section-subtitle {
-  display: block;
-  font-weight: 700;
-}
-.section-banner .section-content .section-description {
-  font-weight: 500;
-  color: #242B33;
-}
-.section-banner .banner-img {
-  width: 100%;
-  object-fit: cover;
-}
-.section-banner .btn-group {
-  display: flex;
-}
-.section-banner .btn-group .btn:first-child {
-  margin-right: 20px;
-}
-.section-banner .btn-group .rounded-border {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #003459;
-  border-radius: 50%;
-}
-.section-banner .btn-group .btn-text {
-  margin-right: 8px;
-  color: #003459;
-  font-weight: 500;
-}
 
 .badge {
   display: flex;
@@ -366,8 +367,6 @@ body {
 }
 
 .section-banner-women-kiss-dog .section-content {
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
   position: absolute;
   top: 40px;

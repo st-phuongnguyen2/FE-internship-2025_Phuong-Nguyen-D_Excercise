@@ -1,6 +1,6 @@
 .section-banner-women-kiss-dog {
   .section-content {
-    @include flex(flex, column, flex-end);
+    align-items: flex-end;
     @include set-element-position(absolute, 40px, 692px, 400px);
     text-align: right;
 
