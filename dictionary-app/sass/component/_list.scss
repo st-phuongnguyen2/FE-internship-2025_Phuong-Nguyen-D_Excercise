@@ -1,0 +1,15 @@
+@use '../base' as *;
+
+.list {
+  padding-left: 16px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+
+  .list-item {
+    .item-title {
+      color: $primary-color;
+      font-size: $text-2xl;
+      font-weight: $font-700;
+    }
+  }
+}

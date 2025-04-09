@@ -1,29 +1,22 @@
-@use '../base' as *;
+.search-form {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
 
-.todo-form {
-  position: relative;
+  padding: 20px;
 
-  margin-bottom: $spacing-md;
-
-  width: 100%;
-  .todo-input {
-    width: 100%;
-    padding: $spacing-lg $spacing-sm;
-    
-    border-radius: 30px;
+  .search-input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
   }
 
-  .add-btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  .btn-icon {
+    padding: 0 10px;
+    border-radius: 10px;
 
-    padding: $spacing-lg $spacing-xxl;
-    border-radius: 30px;
-    
-    background-color: $orange-color;
-
-    font-weight: $font-500;
-    color: $white-color;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

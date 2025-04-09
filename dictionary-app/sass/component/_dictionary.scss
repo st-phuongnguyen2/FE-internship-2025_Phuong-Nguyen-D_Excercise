@@ -1,13 +1,43 @@
 @use '../base' as *;
-.section-app {
-  .section-content {
-    // max-width: 700px;
-    // margin: auto;
-    // padding: 20px;
-    // border-radius: 10px;
 
-    // background-color: $pink-color;
-    // box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
-    background-color: pink;
+.section-content {
+  padding: 20px;
+
+  .dictionary-list {
+    .dictionary-item {
+      .phonetic-list {
+        text-transform: none;
+      }
+
+      .meaning-list {
+        padding-left: 0px;
+
+        .meaning-item {
+          .type-word {
+            color: $neutral-color;
+            margin-bottom: 8px;
+            font-size: $text-lg;
+            font-weight: $font-700;
+            font-style: italic;
+            border-bottom: 1px solid $dark-blue-80;
+          }
+
+          .meaning-text {
+            margin-bottom: 8px;
+          }
+
+          .definition-list {
+            .definition-item {
+              margin-bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-message {
+    display: flex;
+    justify-content: center;
   }
 }

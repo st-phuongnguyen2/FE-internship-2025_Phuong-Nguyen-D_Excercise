@@ -1,6 +1,7 @@
 const searchInput = document.getElementById('search-input');
 const btnSearch = document.getElementById('search-btn');
 const dictionaryList = document.getElementById('dictionary-list');
+const sectionMessage = document.getElementById('section-message');
 
 btnSearch.addEventListener('click', search);
 
@@ -12,16 +13,25 @@ async function search(e) {
 
   if (searchInput) {
     try {
+      renderDictionaryResult(undefined, 'Loading...');
       const data = await lookupDictionary(searchText);
-      renderDictionaryResult(data);
+      if (Array.isArray(data)) {
+        renderDictionaryResult(data);
+      } else {
+        renderDictionaryResult(undefined, data.message);
+      }
     } catch (error) {
       console.log(error);
+      renderDictionaryResult(error.message);
     }
   }
 }
 
-function renderDictionaryResult(resultList) {
-  if (resultList.length > 0) {
+function renderDictionaryResult(resultList, message) {
+  dictionaryList.innerHTML = '';
+  sectionMessage.innerHTML = '';
+
+  if (!message && resultList.length > 0) {
     resultList.forEach((item) => {
       const dictionaryItem = document.createElement('li');
       dictionaryItem.classList.add('list-item', 'dictionary-item');
@@ -45,7 +55,7 @@ function renderDictionaryResult(resultList) {
       }
       if (item.meanings.length > 0) {
         const meaningList = document.createElement('ul');
-        meaningList.classList.add('meaning-list');
+        meaningList.classList.add('list', 'meaning-list');
 
         item.meanings.forEach((item) => {
           const meaningItem = document.createElement('li');
@@ -78,6 +88,13 @@ function renderDictionaryResult(resultList) {
 
       dictionaryList.appendChild(dictionaryItem);
     });
+  } else {
+    let customMesage =
+      "Sorry pal, we couldn't find definitions for the word you were looking for.";
+    if (message) {
+      customMesage = message;
+    }
+    sectionMessage.textContent = customMesage;
   }
 }
 
@@ -93,5 +110,3 @@ async function lookupDictionary(key) {
     console.log('error: ', error);
   }
 }
-
-// lookupDictionary('hello');
