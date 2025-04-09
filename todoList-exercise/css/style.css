@@ -158,7 +158,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 12px;
   margin-bottom: 10px;
+}
+.todo-list .list-item:hover {
+  background-color: #fceed5;
+  border-radius: 10px;
 }
 .todo-list .list-item .item-label {
   font-size: 24px;
@@ -170,6 +175,14 @@ body {
   padding: 5px 10px;
   border: none;
   border-radius: 50%;
+}
+.todo-list .list-item .btn-primary {
+  background-color: #EADFD4;
+  color: #000000;
+}
+.todo-list .list-item .btn-primary:hover {
+  background-color: #FC643A;
+  color: #ffffff;
 }
 
 .todo-form {
@@ -219,6 +232,7 @@ body {
   padding: 14px 28px;
   font-size: 16px;
   color: #000000;
+  cursor: pointer;
 }
 
 .btn-primary {
