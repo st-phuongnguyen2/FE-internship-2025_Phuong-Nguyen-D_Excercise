@@ -56,8 +56,6 @@
     }
 
     .section-content {
-      justify-content: center;
-
       @include set-element-position(absolute, 180px, 130px, 480px);
 
       .section-title {

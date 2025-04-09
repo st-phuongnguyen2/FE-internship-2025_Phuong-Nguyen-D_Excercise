@@ -281,7 +281,6 @@ body {
   max-height: 600px;
 }
 .section-banner.main-banner .section-content {
-  justify-content: center;
   position: absolute;
   top: 180px;
   left: 130px;
