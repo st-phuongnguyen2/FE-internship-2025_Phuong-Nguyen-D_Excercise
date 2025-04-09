@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../../assets/fonts/SVN-Gilroy-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../../assets/fonts/SVN-Gilroy-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: $font-primary;
+}

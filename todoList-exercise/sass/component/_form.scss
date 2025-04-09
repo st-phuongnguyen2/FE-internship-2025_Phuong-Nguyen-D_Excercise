@@ -1,0 +1,29 @@
+@use '../base' as *;
+
+.todo-form {
+  position: relative;
+
+  margin-bottom: $spacing-md;
+
+  width: 100%;
+  .todo-input {
+    width: 100%;
+    padding: $spacing-lg $spacing-sm;
+
+    border-radius: 30px;
+  }
+
+  .add-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding: $spacing-lg $spacing-xxl;
+    border-radius: 30px;
+    
+    background-color: $orange-color;
+
+    font-weight: $font-500;
+    color: $white-color;
+  }
+}
