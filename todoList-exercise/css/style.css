@@ -211,6 +211,27 @@ body {
   color: #003459;
 }
 
+.btn {
+  font-family: "SVN-Gilroy", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 57px;
+  padding: 14px 28px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.btn-primary {
+  background-color: #003459;
+  color: #fdfdfd;
+}
+
+.btn-outline {
+  border: 1px solid #003459;
+  background-color: inherit;
+  color: #003459;
+}
+
 .header {
   padding: 20px 0;
 }

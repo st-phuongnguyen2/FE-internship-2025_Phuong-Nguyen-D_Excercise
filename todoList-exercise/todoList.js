@@ -3,8 +3,7 @@ const addBtn = document.getElementById('add-btn');
 const todoInput = document.getElementById('todo-input');
 const todoList = document.getElementById('todo-list');
 
-// add new todo to list
-addBtn.addEventListener('click', (e) => {
+function addTodo(e) {
   e.preventDefault();
   const todoText = todoInput.value.trim();
 
@@ -38,11 +37,14 @@ addBtn.addEventListener('click', (e) => {
     todoInput.value = '';
     console.log('ABC');
   }
-});
+}
+
+// add new todo to list
+addBtn.addEventListener('click', addTodo);
 
 //user enter when add todolist
 todoInput.addEventListener('keypress', function (event) {
   if (event.key === 'Enter') {
-    addBtn.click();
+    addTodo();
   }
 });
