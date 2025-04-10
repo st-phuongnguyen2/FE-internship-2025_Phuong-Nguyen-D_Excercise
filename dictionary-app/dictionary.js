@@ -8,13 +8,13 @@ btnSearch.addEventListener('click', search);
 async function search(e) {
   e.preventDefault();
   const searchText = searchInput.value.trim();
-
-  console.log(searchText);
-
+  const API_URL = 'https://api.dictionaryapi.dev';
   if (searchInput) {
     try {
       renderDictionaryResult(undefined, 'Loading...');
-      const data = await lookupDictionary(searchText);
+      const res = await fetch(`${API_URL}/api/v2/entries/en/${searchText}`);
+      const data = await res.json();
+
       if (Array.isArray(data)) {
         renderDictionaryResult(data);
       } else {
@@ -89,25 +89,9 @@ function renderDictionaryResult(resultList, message) {
       dictionaryList.appendChild(dictionaryItem);
     });
   } else {
-    let customMessage =
+    const customMessage =
+      message ||
       "Sorry pal, we couldn't find definitions for the word you were looking for.";
-    if (message) {
-      customMessage = message;
-    }
-
     sectionMessage.textContent = customMessage;
-  }
-}
-
-async function lookupDictionary(key) {
-  const API_URL = 'https://api.dictionaryapi.dev';
-  try {
-    const res = await fetch(`${API_URL}/api/v2/entries/en/${key}`);
-    const data = await res.json();
-
-    console.log('data: ', data);
-    return data;
-  } catch (error) {
-    console.log('error: ', error);
   }
 }
