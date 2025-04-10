@@ -1,6 +1,7 @@
 .section-product {
   .section-header {
-    @include flex($display: flex, $justify: space-between);
+    display: flex;
+    justify-content: space-between;
 
     .section-title {
       font-size: $text-lg;
@@ -19,7 +20,8 @@
     }
 
     .btn-outline {
-      @include flex($display: flex, $direction: row, $align: center);
+      display: flex;
+      align-items: center;
 
       .btn-text {
         margin-right: 8px;
