@@ -89,12 +89,13 @@ function renderDictionaryResult(resultList, message) {
       dictionaryList.appendChild(dictionaryItem);
     });
   } else {
-    let customMesage =
+    let customMessage =
       "Sorry pal, we couldn't find definitions for the word you were looking for.";
     if (message) {
-      customMesage = message;
+      customMessage = message;
     }
-    sectionMessage.textContent = customMesage;
+
+    sectionMessage.textContent = customMessage;
   }
 }
 
