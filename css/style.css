@@ -287,6 +287,7 @@ body {
   max-width: 480px;
 }
 .section-banner.main-banner .section-content .section-title {
+  margin-bottom: 24px;
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
@@ -297,7 +298,6 @@ body {
   line-height: 60px;
 }
 .section-banner.main-banner .section-content .section-description {
-  margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -311,6 +311,7 @@ body {
   max-height: 378px;
 }
 .section-banner.sub-banner .section-content .section-title {
+  margin-bottom: 8px;
   font-size: 52px;
   font-weight: 800;
 }
@@ -320,7 +321,6 @@ body {
   line-height: 54px;
 }
 .section-banner.sub-banner .section-content .section-description {
-  margin-top: 8px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -360,7 +360,7 @@ body {
   align-items: center;
 }
 
-.btn-icon {
+.icon {
   width: 18px;
   height: 18px;
 }
@@ -383,7 +383,7 @@ body {
   left: 85px;
   max-width: 480px;
 }
-.section-banner-adoption .section-content .section-title .btn-icon {
+.section-banner-adoption .section-content .section-title .icon {
   width: 42px;
   height: 38px;
 }

@@ -1,7 +1,10 @@
 .section-banner-women-kiss-dog {
   .section-content {
     align-items: flex-end;
-    @include set-element-position(absolute, 40px, 692px, 400px);
+    position: absolute;
+    top: 40px;
+    left: 692px;
+    max-width: 400px;
     text-align: right;
 
     .btn-group {
@@ -12,10 +15,13 @@
 
 .section-banner-adoption {
   .section-content {
-    @include set-element-position(absolute, 30px, 85px, 480px);
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    max-width: 480px;
 
     .section-title {
-      .btn-icon {
+      .icon {
         width: 42px;
         height: 38px;
       }

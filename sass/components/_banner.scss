@@ -1,6 +1,7 @@
 .section-banner {
   .section-content {
-    @include flex(flex, column);
+    display: flex;
+    flex-direction: column;
 
     .section-title {
       color: $primary-color;
@@ -33,7 +34,10 @@
     }
 
     .rounded-border {
-      @include flex($display: flex, $align: center, $justify: center);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       border: 1px solid $primary-color;
       border-radius: 50%;
     }
@@ -56,9 +60,14 @@
     }
 
     .section-content {
-      @include set-element-position(absolute, 180px, 130px, 480px);
+      position: absolute;
+      top: 180px;
+      left: 130px;
+      max-width: 480px;
 
       .section-title {
+        margin-bottom: 24px;
+
         font-size: $text-4xl;
         font-weight: $font-800;
         line-height: 68px;
@@ -72,8 +81,6 @@
       }
 
       .section-description {
-        margin-top: 24px;
-
         font-size: $text-md;
         line-height: 24px;
       }
@@ -95,6 +102,8 @@
 
     .section-content {
       .section-title {
+        margin-bottom: 8px;
+
         font-size: $text-3xl;
         font-weight: $font-800;
       }
@@ -107,8 +116,6 @@
       }
 
       .section-description {
-        margin-top: 8px;
-
         font-size: $text-xs;
         line-height: 18px;
       }
