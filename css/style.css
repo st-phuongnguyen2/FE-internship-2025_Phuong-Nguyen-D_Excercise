@@ -182,8 +182,8 @@ body {
   padding-right: 0;
 }
 .header .section-navigation .list-nav .list-item-link {
-  color: #003459;
   font-weight: 700;
+  color: #003459;
 }
 .header .section-actions {
   display: flex;
@@ -230,10 +230,99 @@ body {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1212px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
+}
+
+.section-banner .section-content {
+  display: flex;
+  flex-direction: column;
+}
+.section-banner .section-content .section-title {
+  color: #003459;
+}
+.section-banner .section-content .section-subtitle {
+  display: block;
+  font-weight: 700;
+}
+.section-banner .section-content .section-description {
+  font-weight: 500;
+  color: #242B33;
+}
+.section-banner .banner-img {
+  width: 100%;
+  object-fit: cover;
+}
+.section-banner .btn-group {
+  display: flex;
+}
+.section-banner .btn-group .btn:first-child {
+  margin-right: 20px;
+}
+.section-banner .btn-group .rounded-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  border-radius: 50%;
+}
+.section-banner .btn-group .btn-text {
+  margin-right: 8px;
+  color: #003459;
+  font-weight: 500;
+}
+.section-banner.main-banner {
+  position: relative;
+  padding-top: 112px;
+}
+.section-banner.main-banner .banner-img {
+  max-height: 600px;
+}
+.section-banner.main-banner .section-content {
+  position: absolute;
+  top: 180px;
+  left: 130px;
+  max-width: 480px;
+}
+.section-banner.main-banner .section-content .section-title {
+  margin-bottom: 24px;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+}
+.section-banner.main-banner .section-content .section-subtitle {
+  margin-top: 4px;
+  font-size: 46px;
+  line-height: 60px;
+}
+.section-banner.main-banner .section-content .section-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+.section-banner.main-banner .section-content .btn-group {
+  margin-top: 34px;
+}
+.section-banner.sub-banner .container-content {
+  position: relative;
+}
+.section-banner.sub-banner .banner-img {
+  max-height: 378px;
+}
+.section-banner.sub-banner .section-content .section-title {
+  margin-bottom: 8px;
+  font-size: 52px;
+  font-weight: 800;
+}
+.section-banner.sub-banner .section-content .section-subtitle {
+  margin-top: 2px;
+  font-size: 36px;
+  line-height: 54px;
+}
+.section-banner.sub-banner .section-content .section-description {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .badge {
@@ -246,7 +335,7 @@ body {
   border-radius: 28px;
   padding: 8px;
   background-color: #00a7e7;
-  color: #ffffff;
+  color: #fdfdfd;
 }
 
 .btn {
@@ -260,12 +349,46 @@ body {
 
 .btn-primary {
   background-color: #003459;
-  color: #ffffff;
+  color: #fdfdfd;
 }
 
 .btn-outline {
   background-color: inherit;
+  color: #003459;
   border: 1px solid #003459;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.section-banner-women-kiss-dog .section-content {
+  align-items: flex-end;
+  position: absolute;
+  top: 40px;
+  left: 692px;
+  max-width: 400px;
+  text-align: right;
+}
+.section-banner-women-kiss-dog .section-content .btn-group {
+  margin-top: 24px;
+}
+
+.section-banner-adoption .section-content {
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  max-width: 480px;
+}
+.section-banner-adoption .section-content .section-title .icon {
+  width: 42px;
+  height: 38px;
+}
+.section-banner-adoption .section-content .btn-group {
+  margin-top: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */
