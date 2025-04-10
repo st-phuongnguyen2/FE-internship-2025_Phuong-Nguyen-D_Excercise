@@ -1,0 +1,29 @@
+.section-product {
+  .section-header {
+    @include flex($display: flex, $justify: space-between);
+
+    .section-title {
+      font-size: $text-lg;
+      font-weight: $font-700;
+      color: $primary-color;
+      line-height: 36px;
+
+      .section-subtitle {
+        display: block;
+
+        font-size: $text-md;
+        font-weight: $font-500;
+        color: $black-color;
+        line-height: 24px;
+      }
+    }
+
+    .btn-outline {
+      @include flex($display: flex, $direction: row, $align: center);
+
+      .btn-text {
+        margin-right: 8px;
+      }
+    }
+  }
+}

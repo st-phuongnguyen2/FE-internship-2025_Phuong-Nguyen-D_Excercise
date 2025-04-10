@@ -1,6 +1,41 @@
+.main {
+  margin-top: 70px;
+}
+
 .container {
   max-width: 1212px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+$columns: 12;
+$gap: 20px;
+
+.row {
+  display: flex;
+  gap: $gap;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    // width: calc(calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i));
+    width: calc((100% - (#{$i + 1} - 1) * $gap) / #{$i + 1});
+  }
+}
+// Breakpoints
+@media screen and (min-width: 576px) {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+    }
+  }
 }

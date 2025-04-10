@@ -4,11 +4,14 @@
   color: $black-color;
   border-radius: 57px;
   padding: 14px 28px;
+
   font-size: $text-md;
+  color: $black-color;
 }
 
 .btn-primary {
   background-color: $primary-color;
+
   color: $neutral-white-color;
 }
 
@@ -23,4 +26,9 @@
 .btn-icon {
   width: 18px;
   height: 18px;
+  border: 1px solid $primary-color;
+
+  background-color: inherit;
+
+  color: $primary-color;
 }
