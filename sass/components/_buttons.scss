@@ -11,7 +11,7 @@
 
 .btn-primary {
   background-color: $primary-color;
-
+  
   color: $neutral-white-color;
 }
 
@@ -23,12 +23,7 @@
   align-items: center;
 }
 
-.btn-icon {
+.icon {
   width: 18px;
   height: 18px;
-  border: 1px solid $primary-color;
-
-  background-color: inherit;
-
-  color: $primary-color;
 }

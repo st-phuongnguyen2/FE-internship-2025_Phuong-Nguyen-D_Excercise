@@ -202,6 +202,7 @@ body {
   max-width: 480px;
 }
 .section-banner.main-banner .section-content .section-title {
+  margin-bottom: 24px;
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
@@ -212,7 +213,6 @@ body {
   line-height: 60px;
 }
 .section-banner.main-banner .section-content .section-description {
-  margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -226,6 +226,7 @@ body {
   max-height: 378px;
 }
 .section-banner.sub-banner .section-content .section-title {
+  margin-bottom: 8px;
   font-size: 52px;
   font-weight: 800;
 }
@@ -235,7 +236,6 @@ body {
   line-height: 54px;
 }
 .section-banner.sub-banner .section-content .section-description {
-  margin-top: 8px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -328,7 +328,6 @@ body {
 }
 .section-product .section-header .btn-outline {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .section-product .section-header .btn-outline .btn-text {
@@ -371,12 +370,9 @@ body {
   align-items: center;
 }
 
-.btn-icon {
+.icon {
   width: 18px;
   height: 18px;
-  border: 1px solid #003459;
-  background-color: inherit;
-  color: #003459;
 }
 
 .header {
@@ -455,10 +451,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-family: "SVN-Gilroy", sans-serif;
-}
-
-.main {
-  margin-top: 70px;
 }
 
 .footer {
@@ -677,32 +669,6 @@ body {
     width: calc(100% - 0px)/1;
   }
 }
-.section-banner-women-kiss-dog .section-content {
-  align-items: flex-end;
-  position: absolute;
-  top: 40px;
-  left: 692px;
-  max-width: 400px;
-  text-align: right;
-}
-.section-banner-women-kiss-dog .section-content .btn-group {
-  margin-top: 24px;
-}
-
-.section-banner-adoption .section-content {
-  position: absolute;
-  top: 30px;
-  left: 85px;
-  max-width: 480px;
-}
-.section-banner-adoption .section-content .section-title .btn-icon {
-  width: 42px;
-  height: 38px;
-}
-.section-banner-adoption .section-content .btn-group {
-  margin-top: 42px;
-}
-
 .section-knowledge-pet .list-pet-knowledge .list-item {
   flex-grow: 1;
 }
@@ -716,11 +682,37 @@ body {
   color: #242b33;
 }
 
+.section-banner-women-kiss-dog .section-content {
+  align-items: flex-end;
+  position: absolute;
+  top: 40px;
+  left: 692px;
+  max-width: 400px;
+  text-align: right;
+}
+.section-banner-women-kiss-dog .section-content .btn-group {
+  margin-top: 24px;
+}
+
 .section-pet-sellers .section-header .section-title .section-subtitle {
   display: inline;
 }
 .section-pet-sellers .list-seller {
   flex-wrap: nowrap;
+}
+
+.section-banner-adoption .section-content {
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  max-width: 480px;
+}
+.section-banner-adoption .section-content .section-title .icon {
+  width: 42px;
+  height: 38px;
+}
+.section-banner-adoption .section-content .btn-group {
+  margin-top: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */
