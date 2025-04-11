@@ -3,9 +3,9 @@ const btnSearch = document.getElementById('search-btn');
 const dictionaryList = document.getElementById('dictionary-list');
 const sectionMessage = document.getElementById('section-message');
 
-btnSearch.addEventListener('click', onSearchButtonClick);
+btnSearch.addEventListener('click', onSearchDictionary);
 
-async function onSearchButtonClick(e) {
+async function onSearchDictionary(e) {
   e.preventDefault();
   const searchText = searchInput.value.trim();
   const API_URL = 'https://api.dictionaryapi.dev';
