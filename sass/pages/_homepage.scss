@@ -1,0 +1,71 @@
+.section-knowledge-pet {
+  .list-pet-knowledge {
+    .list-item {
+      flex-grow: 1;
+
+      .card {
+        .card-body {
+          .badge {
+            width: max-content;
+            padding: 2px 10px;
+          }
+
+          .card-description {
+            font-size: $text-sm;
+            font-weight: $font-400;
+            color: $neutral-color-80;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-banner-women-kiss-dog {
+  .section-content {
+    align-items: flex-end;
+    position: absolute;
+    top: 40px;
+    left: 692px;
+    max-width: 400px;
+    text-align: right;
+
+    .btn-group {
+      margin-top: 24px;
+    }
+  }
+}
+
+.section-pet-sellers {
+  .section-header {
+    .section-title {
+      .section-subtitle {
+        display: inline;
+      }
+    }
+  }
+
+  .list-seller {
+    flex-wrap: nowrap;
+  }
+}
+
+.section-banner-adoption {
+  .section-content {
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    max-width: 480px;
+
+    .section-title {
+      .icon {
+        width: 42px;
+        height: 38px;
+      }
+    }
+
+    .btn-group {
+      margin-top: 42px;
+    }
+  }
+}
