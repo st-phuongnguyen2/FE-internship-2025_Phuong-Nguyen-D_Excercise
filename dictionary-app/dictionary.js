@@ -3,35 +3,38 @@ const btnSearch = document.getElementById('search-btn');
 const dictionaryList = document.getElementById('dictionary-list');
 const sectionMessage = document.getElementById('section-message');
 
-btnSearch.addEventListener('click', search);
+btnSearch.addEventListener('click', onSearchButtonClick);
 
-async function search(e) {
+async function onSearchButtonClick(e) {
   e.preventDefault();
   const searchText = searchInput.value.trim();
   const API_URL = 'https://api.dictionaryapi.dev';
   if (searchInput) {
     try {
-      renderDictionaryResult(undefined, 'Loading...');
+      renderDictionaryResult();
+      renderMessage('Loading...');
       const res = await fetch(`${API_URL}/api/v2/entries/en/${searchText}`);
       const data = await res.json();
 
       if (Array.isArray(data)) {
         renderDictionaryResult(data);
+        renderMessage('');
       } else {
-        renderDictionaryResult(undefined, data.message);
+        renderDictionaryResult();
+        renderMessage(data.message);
       }
     } catch (error) {
       console.log(error);
-      renderDictionaryResult(error.message);
+      renderDictionaryResult();
+      renderMessage(error.message);
     }
   }
 }
 
-function renderDictionaryResult(resultList, message) {
+function renderDictionaryResult(resultList) {
   dictionaryList.innerHTML = '';
-  sectionMessage.innerHTML = '';
 
-  if (!message && resultList.length > 0) {
+  if (resultList?.length > 0) {
     resultList.forEach((item) => {
       const dictionaryItem = document.createElement('li');
       dictionaryItem.classList.add('list-item', 'dictionary-item');
@@ -88,10 +91,9 @@ function renderDictionaryResult(resultList, message) {
 
       dictionaryList.appendChild(dictionaryItem);
     });
-  } else {
-    const customMessage =
-      message ||
-      "Sorry pal, we couldn't find definitions for the word you were looking for.";
-    sectionMessage.textContent = customMessage;
   }
+}
+
+function renderMessage(message) {
+  sectionMessage.textContent = message;
 }
