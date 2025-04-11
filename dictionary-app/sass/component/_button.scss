@@ -1,0 +1,29 @@
+@use '../base' as *;
+
+.btn {
+  font-family: $font-primary;
+  background-color: $white-color;
+  color: $black-color;
+  border-radius: 57px;
+  padding: 14px 28px;
+
+  font-size: $text-md;
+  color: $black-color;
+
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+
+  color: $neutral-white-color;
+}
+
+.btn-outline {
+  border: 1px solid $primary-color;
+
+  background-color: inherit;
+
+  color: $primary-color;
+}
+

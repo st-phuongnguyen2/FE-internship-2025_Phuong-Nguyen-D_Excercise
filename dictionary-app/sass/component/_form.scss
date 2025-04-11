@@ -1,0 +1,22 @@
+.search-form {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+
+  padding: 20px;
+
+  .search-input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .btn-icon {
+    padding: 0 10px;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

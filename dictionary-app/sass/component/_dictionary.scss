@@ -1,0 +1,43 @@
+@use '../base' as *;
+
+.section-content {
+  padding: 20px;
+
+  .dictionary-list {
+    .dictionary-item {
+      .phonetic-list {
+        text-transform: none;
+      }
+
+      .meaning-list {
+        padding-left: 0px;
+
+        .meaning-item {
+          .type-word {
+            color: $neutral-color;
+            margin-bottom: 8px;
+            font-size: $text-lg;
+            font-weight: $font-700;
+            font-style: italic;
+            border-bottom: 1px solid $dark-blue-80;
+          }
+
+          .meaning-text {
+            margin-bottom: 8px;
+          }
+
+          .definition-list {
+            .definition-item {
+              margin-bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-message {
+    display: flex;
+    justify-content: center;
+  }
+}
