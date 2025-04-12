@@ -19,4 +19,3 @@ export class Product {
 class CartItem {}
 
 class Cart {}
-let x = 1;
