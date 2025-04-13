@@ -4,14 +4,13 @@ loadProduct();
 
 async function loadProduct() {
   try {
-    const res = await fetch('http://192.168.0.106:5501/js-product/data.json');
+    const res = await fetch('http://localhost:5501/data/product.json');
     const data = await res.json();
     console.log('data: ', data);
 
     const products = data.map((item) => {
       return new Product(
         item.id,
-        item.idProduct,
         item.name,
         item.gene,
         item.age,
@@ -43,7 +42,7 @@ function renderProduct(products) {
     }">
         </div>
         <div class="card-body">
-          <h3 class="card-title">${item.idProduct} - ${item.name}</h3>
+          <h3 class="card-title">${item.name}</h3>
           <p class="card-detail"><span class="detail-key">Gene:&nbsp;</span><span class="detail-value">${
             item.gene
           }</span>
@@ -60,35 +59,47 @@ function renderProduct(products) {
 
   productList.innerHTML = ulHTMLString;
 
-  const addtoCartBtns = document.querySelectorAll('.btn-cart[data-product-id]');
-  console.log('addtoCartBtns:', addtoCartBtns);
+  const btnsCart = document.querySelectorAll('button.btn.btn-cart');
 
-  addtoCartBtns.forEach((item) => {
-    console.log('item:', item);
+  btnsCart.forEach((item) => {
     item.addEventListener('click', (e) => {
-      console.log('object:', e.target.dataset);
-      const productId = Number(e.target.dataset.productId);
-      const cart = JSON.parse(localStorage.getItem('cart'));
-
-      const product = products.find((item) => item.id === productId);
-      const newCartItem = new CartItem(
-        product.id,
-        product.name,
-        product.image,
-        1
-      );
-      if (cart) {
-        console.log('ABC');
-        const foundCartItem = cart.find((item) => item.id === productId);
-
-        if (foundCartItem) {
-          foundCartItem.quantity += 1;
+      const productId = e.target.dataset.productId;
+      if (productId) {
+        const cart = JSON.parse(localStorage.getItem('cart'));
+        if (Array.isArray(cart) && cart.length > 0) {
+          const foundCartDetail = cart.find((item) => {
+            return item.id === productId;
+          });
+          if (foundCartDetail) {
+            foundCartDetail.quantity = foundCartDetail.quantity + 1;
+            localStorage.setItem('cart', JSON.stringify(cart));
+          } else {
+            const foundProductDetail = products.find((item) => {
+              return item.id === productId;
+            });
+            const cartItem = new CartItem(
+              foundProductDetail.id,
+              foundProductDetail.name,
+              foundProductDetail.image,
+              foundProductDetail.price,
+              1
+            );
+            cart.push(cartItem);
+            localStorage.setItem('cart', JSON.stringify(cart));
+          }
         } else {
-          cart.push(newCartItem);
+          const foundProductItem = products.find((item) => {
+            return item.id === productId;
+          });
+          const cartItem = new CartItem(
+            foundProductItem.id,
+            foundProductItem.name,
+            foundProductItem.image,
+            foundProductItem.price,
+            1
+          );
+          localStorage.setItem('cart', JSON.stringify([cartItem]));
         }
-        localStorage.setItem('cart', JSON.stringify(cart));
-      } else {
-        localStorage.setItem('cart', JSON.stringify([newCartItem]));
       }
     });
   });
