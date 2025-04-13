@@ -1,4 +1,4 @@
-import { Product } from './base.js';
+import { Product, CartItem } from './base.js';
 
 loadProduct();
 
@@ -11,6 +11,7 @@ async function loadProduct() {
     const products = data.map((item) => {
       return new Product(
         item.id,
+        item.idProduct,
         item.name,
         item.gene,
         item.age,
@@ -32,6 +33,9 @@ function renderProduct(products) {
   let ulHTMLString = '';
   products.forEach((item, index) => {
     ulHTMLString += `<li class="list-item col-3">
+      <button class="btn btn-cart" data-product-id="${
+        item.id
+      }">Add to cart</button>
       <a href="#" class="card card-pet">
         <div class="card-img">
           <img class="product-img pet-img" src="${item.image}" alt="dog${
@@ -39,7 +43,7 @@ function renderProduct(products) {
     }">
         </div>
         <div class="card-body">
-          <h3 class="card-title">${item.id} - ${item.name}</h3>
+          <h3 class="card-title">${item.idProduct} - ${item.name}</h3>
           <p class="card-detail"><span class="detail-key">Gene:&nbsp;</span><span class="detail-value">${
             item.gene
           }</span>
@@ -56,6 +60,38 @@ function renderProduct(products) {
 
   productList.innerHTML = ulHTMLString;
 
+  const addtoCartBtns = document.querySelectorAll('.btn-cart[data-product-id]');
+  console.log('addtoCartBtns:', addtoCartBtns);
+
+  addtoCartBtns.forEach((item) => {
+    console.log('item:', item);
+    item.addEventListener('click', (e) => {
+      console.log('object:', e.target.dataset);
+      const productId = Number(e.target.dataset.productId);
+      const cart = JSON.parse(localStorage.getItem('cart'));
+
+      const product = products.find((item) => item.id === productId);
+      const newCartItem = new CartItem(
+        product.id,
+        product.name,
+        product.image,
+        1
+      );
+      if (cart) {
+        console.log('ABC');
+        const foundCartItem = cart.find((item) => item.id === productId);
+
+        if (foundCartItem) {
+          foundCartItem.quantity += 1;
+        } else {
+          cart.push(newCartItem);
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+      } else {
+        localStorage.setItem('cart', JSON.stringify([newCartItem]));
+      }
+    });
+  });
   // manipulation with DOM case use normal function
   // products.forEach((item) => {
   //   const listItem = document.createElement('li');

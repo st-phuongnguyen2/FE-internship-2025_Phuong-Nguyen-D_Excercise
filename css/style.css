@@ -305,8 +305,18 @@ body {
 .list-product {
   margin-top: 30px;
 }
+.list-product .list-item {
+  position: relative;
+}
 .list-product .list-item:hover .card {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.list-product .list-item .btn-cart {
+  display: none;
+}
+.list-product .list-item:hover .btn-cart {
+  display: block;
+  cursor: pointer;
 }
 
 .section-product .section-header {
@@ -368,6 +378,14 @@ body {
   border: 1px solid #003459;
   display: flex;
   align-items: center;
+}
+
+.btn-cart {
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  padding: 10px 10px;
+  background-color: #00a7e7;
 }
 
 .icon {

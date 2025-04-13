@@ -1,6 +1,7 @@
 [
   {
-    "id": "M0231",
+    "id": 1,
+    "idProduct": "M0231",
     "name": "Pomeranian White",
     "gene": "Male",
     "age": "02 months",
@@ -8,7 +9,8 @@
     "image": "assets/images/dog1.png"
   },
   {
-    "id": "M0502",
+    "id": 2,
+    "idProduct": "M0502",
     "name": "Poodle Tiny Yellow",
     "gene": "Female",
     "age": "02 months",
@@ -16,7 +18,8 @@
     "image": "assets/images/dog2.png"
   },
   {
-    "id": "M0102",
+    "id": 3,
+    "idProduct": "M0102",
     "name": "Poodle Tiny Sepia",
     "gene": "Male",
     "age": "02 months",
@@ -24,7 +27,8 @@
     "image": "assets/images/dog3.png"
   },
   {
-    "id": "M0512",
+    "id": 4,
+    "idProduct": "M0512",
     "name": "Alaskan Malamute Grey",
     "gene": "Male",
     "age": "02 months",
@@ -32,7 +36,8 @@
     "image": "assets/images/dog4.png"
   },
   {
-    "id": "M0231",
+    "id": 5,
+    "idProduct": "M0231",
     "name": "Pembroke Corgi Cream",
     "gene": "Male",
     "age": "02 months",
@@ -40,7 +45,8 @@
     "image": "assets/images/dog5.png"
   },
   {
-    "id": "M0502",
+    "id": 6,
+    "idProduct": "M0502",
     "name": "Pembroke Corgi Tricolor",
     "gene": "Female",
     "age": "02 months",
@@ -48,7 +54,8 @@
     "image": "assets/images/dog6.png"
   },
   {
-    "id": "M0231",
+    "id": 7,
+    "idProduct": "M0231",
     "name": "Pomeranian White",
     "gene": "Female",
     "age": "02 months",
@@ -56,7 +63,8 @@
     "image": "assets/images/dog7.png"
   },
   {
-    "id": "M0512",
+    "id": 8,
+    "idProduct": "M0512",
     "name": "Poodle Tiny Dairy Cow",
     "gene": "Male",
     "age": "02 months",

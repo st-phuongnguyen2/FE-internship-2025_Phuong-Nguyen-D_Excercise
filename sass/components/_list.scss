@@ -1,7 +1,21 @@
 .list-product {
   margin-top: 30px;
 
+  .list-item {
+    position: relative;
+  }
+
   .list-item:hover .card {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .list-item .btn-cart {
+    display: none;
+  }
+
+  .list-item:hover .btn-cart {
+    display: block;
+
+    cursor: pointer;
   }
 }
