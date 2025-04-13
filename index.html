@@ -2,57 +2,55 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="section-navigation">
-        <h2 class="section-title"><img class="logo-img" src="./assets/images/monito-logo.png" alt="Logo Monitor"></h2>
-        <nav class="nav">
-          <ul classname="list-nav">
-            <li class="list-item"><a class="list-item-link" href="#">Home</a></li>
-            <li class="list-item"><a class="list-item-link" href="#">Category</a></li>
-            <li class="list-item"><a class="list-item-link" href="#">About</a></li>
-            <li class="list-item"><a class="list-item-link" href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="section-actions">
-        <form class="form-search">
-          <div class="form-input">
-            <img class="search-icon" src="./assets/icons/search-icon.svg" alt="search-icon">
-            <input class="search-input" type="text" placeholder="Search something here!">
+      <div class="section-body">
+        <div class="section-navigation">
+          <h2 class="section-title"><img class="logo-img" src="./assets/images/monito-logo.png" alt="Logo Monitor"></h2>
+          <nav class="nav">
+            <ul class="list-nav">
+              <li class="list-item"><a class="list-item-link" href="#">Home</a></li>
+              <li class="list-item"><a class="list-item-link" href="#">Category</a></li>
+              <li class="list-item"><a class="list-item-link" href="#">About</a></li>
+              <li class="list-item"><a class="list-item-link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="section-actions">
+          <form class="form-search">
+            <div class="form-input">
+              <img class="search-icon" src="./assets/icons/search-icon.svg" alt="search-icon">
+              <input class="search-input" type="text" placeholder="Search something here!">
+            </div>
+          </form>
+          <button class="btn btn-primary btn-join-community">Join the community</button>
+          <div class="dropdown-group">
+            <img class="flag-icon" src="./assets/icons/vnd-icon.svg" alt="icon-vnd">
+            <select class="select-form" id="currency" name="vnd">
+              <option class="select-input-option" value="au">VND</option>
+              <option class="select-input-option" value="ca">USD</option>
+              <option class="select-input-option" value="usa">Yen</option>
+            </select>
           </div>
-        </form>
-        <button class="btn btn-primary btn-join-communiry">Join the community</button>
-        <div class="dropdown-group">
-          <img class="flag-icon" src="./assets/icons/vnd-icon.svg" alt="icon-vnd">
-          <select class="select-form" id="currency" name="vnd">
-            <option class="select-input-option" value="au">VND</option>
-            <option class="select-input-option" value="ca">USD</option>
-            <option class="select-input-option" value="usa">Yen</option>
-          </select>
         </div>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="section section-banner">
+    <section class="section section-banner main-banner">
+      <img class="banner-img hero-banner" src="./assets/images/hero-banner.png" alt="dog-and-human">
       <div class="container">
         <div class="section-content">
-          <h1 class="section-title">One more friend
-            <span class="section-subtitle">Thousands more fun!</span>
+          <h1 class="section-title">One More Friend
+            <span class="section-subtitle">Thousands More Fun!</span>
           </h1>
           <p class="section-description">Having a pet means you have more joy, a new friend, a happy person who will
             always be with you to
@@ -62,12 +60,13 @@
               <span class="btn-text">
                 View Intro
               </span>
-              <img class="btn-icon" src="./assets/icons/play-icon.svg" alt="play-icon">
+              <div class="rounded-border">
+                <img class="icon" src="./assets/icons/play-circle.svg" alt="play-circle">
+              </div>
             </button>
             <button class="btn btn-primary">Explore Now</button>
           </div>
         </div>
-        <img class="section-img" class="dog-and-human-img" src="./assets/images/dog-and-human.png" alt="dog-and-human">
       </div>
     </section>
     <section class="section section-product section-more-product">
@@ -80,32 +79,35 @@
             <span class="btn-text">
               View more
             </span>
-            <img class="btn-icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
+            <img class="icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
           </button>
         </div>
-        <ul class="list-product list-pet">
-          <li class="list-item">
+        <ul id="list-product" class="list-product list-pet row">
+
+          <!-- <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog1.png" alt="dog1">
+                <img class="product-img pet-img" src="./assets/images/dog1.png" alt="dog1">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO231 - Pomeranian White</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span class="detail-value">Male</span></span>.
+                <p class="card-detail"><span class="detail-key">Gene: <span class="detail-value">Male</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon">
                   <span class="detail-key">Age: <span class="detail-value">02 months</span></span>
                 </p>
                 <span class="card-price">6.900.000 VND</span>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog2.png" alt="dog2">
+                <img class="product-img pet-img" src="./assets/images/dog2.png" alt="dog2">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO502 - Poodle Tiny Yellow</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span class="detail-value">Female</span></span>.
+                <p class="card-detail"><span class="detail-key">Gene: <span class="detail-value">Female</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon">
                   <span class="detail-key">Age: <span class="detail-value">02
                       months</span></span>
                 </p>
@@ -113,108 +115,127 @@
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog3.png" alt="dog3">
+                <img class="product-img pet-img" src="./assets/images/dog3.png" alt="dog3">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO102 - Poodle Tiny Sepia</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span class="detail-value">Male</span></span>.
+                <p class="card-detail"><span class="detail-key">Gene: <span class="detail-value">Male</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon">
                   <span class="detail-key">Age: <span class="detail-value">02 months</span></span>
                 </p>
                 <span class="card-price">4.000.000 VND</span>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog4.png" alt="dog4">
+                <img class="product-img pet-img" src="./assets/images/dog4.png" alt="dog4">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO512 - Alaskan Malamute Grey</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span>Male</span></span>. <span
-                    class="detail-key">Age: <span class="detail-value">02 months</span></span></p>
+                <p class="card-detail"><span class="detail-key">Gene: <span>Male</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span
+                    class="detail-key">Age:
+                    <span class="detail-value">02 months</span></span>
+                </p>
                 <span class="card-price">8.900.000 VND</span>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog5.png" alt="dog5">
+                <img class="product-img pet-img" src="./assets/images/dog5.png" alt="dog5">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO231 - Pembroke Corgi Cream</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span>Male</span></span>. <span
-                    class="detail-key">Age: <span class="detail-value">02 months</span></span></p>
+                <p class="card-detail"><span class="detail-key">Gene: <span>Male</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span
+                    class="detail-key">Age:
+                    <span class="detail-value">02 months</span></span>
+                </p>
                 <span class="card-price">7.900.000 VND</span>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog6.png" alt="dog6">
+                <img class="product-img pet-img" src="./assets/images/dog6.png" alt="dog6">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO502 - Pembroke Corgi Tricolor</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span>Female</span></span>. <span
-                    class="detail-key">Age: <span class="detail-value">02 months</span></span></p>
+                <p class="card-detail"><span class="detail-key">Gene: <span>Female</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span
+                    class="detail-key">Age:
+                    <span class="detail-value">02 months</span></span>
+                </p>
                 <span class="card-price">9.000.000 VND</span>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog7.png" alt="dog7">
+                <img class="product-img pet-img" src="./assets/images/dog7.png" alt="dog7">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO231 - Pomeranian White</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span>Female</span></span>. <span
-                    class="detail-key">Age: <span class="detail-value">02 months</span></span></p>
+                <p class="card-detail"><span class="detail-key">Gene: <span>Female</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span
+                    class="detail-key">Age:
+                    <span class="detail-value">02 months</span></span>
+                </p>
                 <span class="card-price">6.500.000 VND</span>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a href="#" class="card card-pet">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/dog8.png" alt="dog8">
+                <img class="product-img pet-img" src="./assets/images/dog8.png" alt="dog8">
               </div>
               <div class="card-body">
                 <h3 class="card-title">MO512 - Poodle Tiny Dairy Cow</h3>
-                <p class="card-detail"><span class="detail-key">Gene: <span>Male</span></span>. <span
-                    class="detail-key">Age: <span class="detail-value">02 months</span></span></p>
+                <p class="card-detail"><span class="detail-key">Gene: <span>Male</span></span>
+                  <img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span
+                    class="detail-key">Age:
+                    <span class="detail-value">02 months</span></span>
+                </p>
                 <span class="card-price">5.000.000 VND</span>
               </div>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
-    <section class="section section-banner-women-kiss-dog">
+    <section class="section section-banner sub-banner section-banner-women-kiss-dog">
       <div class="container">
-        <div class="section-img">
-          <img class="woman-kiss-dog-img" src="./assets/images/woman-kiss-dog.png" alt="woman-kiss-dog">
-        </div>
-        <div class="section-content">
-          <h2 class="section-title">One more friend
-            <span class="section-subtitle">Thousands more fun!</span>
-          </h2>
-          <p class="section-description">Having a pet means you have more joy, a new friend, a happy person who
-            will always be with you to
-            have fun. We have 200+ different pets that can meet your needs!</p>
-          <div class="btn-group">
-            <button class="btn btn-outline">
-              <span class="btn-text">
-                View Intro
-              </span>
-              <img class="btn-icon" src="./assets/icons/play-icon.svg" alt="play-icon">
-            </button>
-            <button class="btn btn-primary">Explore Now</button>
+        <div class="container-content">
+          <img class="banner-img woman-kiss-dog-img" src="./assets/images/woman-kiss-dog-banner.png"
+            alt="woman-kiss-dog">
+          <div class="section-content">
+            <h2 class="section-title">One more friend
+              <span class="section-subtitle">Thousands more fun!</span>
+            </h2>
+            <p class="section-description">Having a pet means you have more joy, a new friend, a happy person who
+              will always be with you to
+              have fun. We have 200+ different pets that can meet your needs!</p>
+            <div class="btn-group">
+              <button class="btn btn-outline">
+                <span class="btn-text">
+                  View Intro
+                </span>
+                <div class="rounded-border">
+                  <img class="icon" src="./assets/icons/play-circle.svg" alt="play-circle">
+                </div>
+              </button>
+              <button class="btn btn-primary">Explore Now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -228,50 +249,54 @@
           </h2>
           <button class="btn btn-outline">
             <span class="btn-text">View more</span>
-            <img class="btn-icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
+            <img class="icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
           </button>
         </div>
-        <ul class="list-product list-food">
-          <li class="list-item">
+        <ul class="list-product list-food row">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product1.png" alt="product1">
+                <img class="product-img food-img" src="./assets/images/product1.png" alt="product1">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Reflex Plus Adult Cat Food Salmon</h3>
                 <p class="card-detail"><span class="detail-key">Product: <span class="detail-value">Dog
-                      Food</span></span>. <span class="detail-key">Size:
+                      Food</span></span><img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"><span
+                    class="detail-key">Size:
                     <span class="detail-value">385mg</span></span></p>
                 <span class="card-price">140.000 VND</span>
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product2.png" alt="product2">
+                <img class="product-img food-img" src="./assets/images/product2.png" alt="product2">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Reflex Plus Adult Cat Food Salmon</h3>
                 <p class="card-detail"><span class="detail-key">Product: <span class="detail-value">Cat
-                      Food</span></span>. <span class="detail-key">Size:
+                      Food</span></span><img class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"><span
+                    class="detail-key">Size:
                     <span class="detail-value">1.5kg</span></span></p>
                 <span class="card-price">165.000 VND</span>
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product3.png" alt="product3">
+                <img class="product-img food-img" src="./assets/images/product3.png" alt="product3">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Cat scratching ball toy kitten sisal rope ball</h3>
@@ -279,14 +304,15 @@
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product4.png" alt="product4">
+                <img class="product-img food-img" src="./assets/images/product4.png" alt="product4">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Cute Pet Cat Warm Nest</h3>
@@ -299,54 +325,57 @@
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product5.png" alt="product5">
+                <img class="product-img food-img" src="./assets/images/product5.png" alt="product5">
               </div>
               <div class="card-body">
                 <h3 class="card-title">NaturVet Dogs - Omega-Gold Plus Salmon Oil</h3>
                 <p class="card-detail">
-                  <span class="detail-key">Product: <span class="detail-value">Dog Food</span></span>. <span
-                    class="detail-key">Size:
+                  <span class="detail-key">Product: <span class="detail-value">Dog Food</span></span><img
+                    class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span class="detail-key">Size:
                     <span class="detail-value">385mg</span></span>
                 </p>
                 <span class="card-price">350.000 VND</span>
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product6.png" alt="product6">
+                <img class="product-img food-img" src="./assets/images/product6.png" alt="product6">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Costumes Fashion Pet Clother Cowboy Rider</h3>
                 <p class="card-detail">
-                  <span class="detail-key">Product: <span class="detail-value">Costume</span></span>. <span
-                    class="detail-key">Size:
+                  <span class="detail-key">Product: <span class="detail-value">Costume</span></span><img
+                    class="detail-icon" src="./assets/icons/gray-dot.svg" alt="dot-icon"> <span class="detail-key">Size:
                     <span class="detail-value">1.5kg</span></span>
                 </p>
                 <span class="card-price">140.000 VND</span>
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product7.png" alt="product7">
+                <img class="product-img food-img" src="./assets/images/product7.png" alt="product7">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Costumes Chicken Drumsti ck Headband</h3>
@@ -357,14 +386,15 @@
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-3">
             <a class="card card-food" href="#">
               <div class="card-img">
-                <img class="food-img" src="./assets/images/product8.png" alt="product8">
+                <img class="product-img food-img" src="./assets/images/product8.png" alt="product8">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Plush Pet Toy</h3>
@@ -375,14 +405,15 @@
               </div>
               <div class="card-footer">
                 <img class="gift-icon" src="./assets/icons/gift-icon.svg" alt="gift-icon">
-                <p class="card-footer-title">. Free Toy & Free Shaker</p>
+                <img src="./assets/icons/blue-dot.svg" alt="blue-dot-icon">
+                <p class="card-footer-title"> Free Toy & Free Shaker</p>
               </div>
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section section-pet-sellers">
+    <section class="section section-product section-pet-sellers">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
@@ -392,56 +423,61 @@
 
           <button class="btn btn-outline">
             <span class="btn-text">
-              View more
+              View all our sellers
             </span>
-            <img class="btn-icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
+            <img class="icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
           </button>
         </div>
-        <ul class="list-product list-seller">
+        <ul class="list-product list-seller row">
           <li class="list-item">
-            <img class="seller-img" src="./assets/images/sheba.png" alt="sheba-img">
+            <img class="seller-img product-img" src="./assets/images/sheba.png" alt="sheba-img">
           </li>
-          <li>
-            <img class="seller-img" src="./assets/images/whiskas.png" alt="whiskas-img">
+          <li class="list-item">
+            <img class="seller-img product-img" src="./assets/images/whiskas.png" alt="whiskas-img">
           </li>
-          <li>
-            <img class="seller-img" src="./assets/images/bakers.png" alt="bakers-img">
+          <li class="list-item">
+            <img class="seller-img product-img" src="./assets/images/bakers.png" alt="bakers-img">
           </li>
-          <li>
-            <img class="seller-img" src="./assets/images/felix.png" alt="felix-img">
+          <li class="list-item">
+            <img class="seller-img product-img" src="./assets/images/felix.png" alt="felix-img">
           </li>
-          <li>
-            <img class="seller-img" src="./assets/images/goodboy.png" alt="goodboy-img">
+          <li class="list-item">
+            <img class="seller-img product-img" src="./assets/images/goodboy.png" alt="goodboy-img">
           </li>
-          <li>
-            <img class="seller-img" src="./assets/images/bakers.png" alt="bakers-img">
+          <li class="list-item">
+            <img class="seller-img product-img" src="./assets/images/bakers.png" alt="bakers-img">
           </li>
-          <li>
-            <img class="seller-img" src="./assets/images/pedigree.png" alt="pedigree-img">
+          <li class="list-item">
+            <img class="seller-img product-img" src="./assets/images/pedigree.png" alt="pedigree-img">
           </li>
         </ul>
     </section>
-    <section class="section section-banner-adoption">
+    <!--  -->
+    <section class="section section-banner sub-banner section-banner-adoption">
       <div class="container">
-        <div class="section-content">
-          <h2 class="section-title">Adoption <span class="section-subtitle">We need help. so do they.</span></h2>
-          <img class="btn-icon" src="./assets/icons/fontisto-paw-icon.svg" alt="fontisto-paw-icon">
-          <p class="section-description">Adopt a pet and give it a home,
-            it will be love you back unconditionally.</p>
-          <div class="btn-group">
-            <button class="btn btn-primary">Explore Now</button>
-            <button class="btn btn-outline"><span class="btn-text">View Intro</span>
-              <img class="btn-icon" src="./assets/icons/play-icon.svg" alt="play-icon">
-            </button>
-          </div>
-        </div>
+        <div class="container-content">
+          <img class="banner-img shake-hand-img" src="./assets/images/shake-hand-banner.png" alt="shake-hand-img">
+          <div class="section-content">
+            <h2 class="section-title">Adoption
+              <img class="icon" src="./assets/icons/fontisto-paw-icon.svg" alt="fontisto-paw-icon">
+              <span class="section-subtitle">We need help. so do they.</span>
+            </h2>
 
-        <div class="section-img">
-          <img class="shake-hand-img" src="./assets/images/shake-hand.png" alt="shake-hand-img">
+            <p class="section-description">Adopt a pet and give it a home, <br>
+              it will be love you back unconditionally.</p>
+            <div class="btn-group">
+              <button class="btn btn-primary">Explore Now</button>
+              <button class="btn btn-outline"><span class="btn-text">View Intro</span>
+                <div class="rounded-border">
+                  <img class="icon" src="./assets/icons/play-circle.svg" alt="play-circle">
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section section-knowledge-pet">
+    <section class="section section-product section-knowledge-pet">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">
@@ -449,31 +485,28 @@
             Useful pet knowledge
           </h2>
           <button class="btn btn-outline"><span class="btn-text">View more</span>
-            <img class="btn-icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
+            <img class="icon" src="./assets/icons/arrow-right-icon.svg" alt="arrow-right">
           </button>
-
         </div>
-        <ul class="list-product list-pet-knowledge">
-          <li class="list-item">
+        <ul class="list-product list-pet-knowledge row">
+          <li class="list-item col-4">
             <a class="card card-pet-knowledge" href="#">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/pet1.png" alt="pet1">
+                <img class="product-img pet-img" src="./assets/images/pet1.png" alt="pet1">
               </div>
               <div class="card-body">
                 <span class="badge">Pet knowledge</span>
-                <div>
-                  <h3 class="card-title">What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
-                  <p class="card-description">The Pomeranian, also known as the Pomeranian (Pom dog), is always in
-                    the top of the cutest
-                    pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.</p>
-                </div>
+                <h3 class="card-title">What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+                <p class="card-description">The Pomeranian, also known as the Pomeranian (Pom dog), is always in
+                  the top of the cutest
+                  pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.</p>
               </div>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item col-4">
             <a class="card card-pet-knowledge" href="#">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/pet2.png" alt="pet2">
+                <img class="product-img pet-img" src="./assets/images/pet2.png" alt="pet2">
               </div>
               <div class="card-body">
                 <span class="badge">Pet knowledge</span>
@@ -487,10 +520,10 @@
             </a>
           </li>
 
-          <li class="list-item">
+          <li class="list-item col-4">
             <a class="card card-pet-knowledge" href="#">
               <div class="card-img">
-                <img class="pet-img" src="./assets/images/pet3.png" alt="pet3">
+                <img class="product-img pet-img" src="./assets/images/pet3.png" alt="pet3">
               </div>
               <div class="card-body">
                 <span class="badge">Pet knowledge</span>
@@ -506,66 +539,71 @@
         </ul>
       </div>
     </section>
+  </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="section-subscribe">
-          <form class="form-register">
-            <h4 class="form-register-title">
-              Register now so you don't miss our programs
-            </h4>
-            <div class="form-input">
-              <input class="email-input" type="text" placeholder="Enter your Email" />
-            </div>
-            <button class="btn btn-primary btn-subscribe">Subcribe Now</button>
-          </form>
-        </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="section-subscribe">
+        <form class="form-register">
+          <h4 class="form-register-title">
+            Register now so you don't miss our programs
+          </h4>
+          <div class="form-input">
+            <input class="email-input" type="text" placeholder="Enter your Email" />
+            <button class="btn btn-primary btn-subscribe">Subscribe Now</button>
+          </div>
+        </form>
+      </div>
 
-        <div class="section-content">
-          <nav class="nav">
-            <ul class="list-info">
-              <li class="list-item">
-                <a href="#" class="list-item-link">Home</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="list-item-link">Category</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="list-item-link">About</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="list-item-link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="list-social">
+      <div class="section-content">
+        <nav class="nav">
+          <ul class="list-info">
             <li class="list-item">
-              <a href="#" class="list-item-link"><img src="./assets/icons/fb-icon.svg" alt="fb-icon" /></a>
+              <a href="#" class="list-item-link">Home</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-item-link"><img src="./assets/icons/tw-icon.svg" alt="tw-icon" /></a>
+              <a href="#" class="list-item-link">Category</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-item-link"><img src="./assets/icons/insta-icon.svg" alt="insta-icon" /></a>
+              <a href="#" class="list-item-link">About</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-item-link"><img src="./assets/icons/yt-icon.svg" alt="yt-icon" /></a>
+              <a href="#" class="list-item-link">Contact</a>
             </li>
           </ul>
-        </div>
-        <div class="section-info">
-          <p class="section-description">
-            © 2022 Monito. All rights reserved.
-          </p>
-          <img class="monito-img" src="./assets/images/monito-logo.png" alt="monito-logo" />
-          <div class="section-description">
-            <a href="#" class="policy-link">Terms of Service</a>
-            <a href="#" class="policy-link">Privacy Policy</a>
-          </div>
+        </nav>
+
+        <ul class="list-info">
+          <li class="list-item">
+            <a href="#" class="list-item-link"><img src="./assets/icons/fb-icon.svg" alt="fb-icon" /></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link"><img src="./assets/icons/tw-icon.svg" alt="tw-icon" /></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link"><img src="./assets/icons/insta-icon.svg" alt="insta-icon" /></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-item-link"><img src="./assets/icons/yt-icon.svg" alt="yt-icon" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-info">
+        <p class="section-description">
+          © 2022 Monito. All rights reserved.
+        </p>
+        <img class="monito-img" src="./assets/images/monito-logo.png" alt="monito-logo" />
+        <div class="section-description">
+          <a href="#" class="policy-link">Terms of Service</a>
+          <a href="#" class="policy-link">Privacy Policy</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+
+  <script src="./js/product.js" type="module"></script>
+
 </body>
 
 </html>

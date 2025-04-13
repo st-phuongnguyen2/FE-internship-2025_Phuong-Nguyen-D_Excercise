@@ -1,0 +1,39 @@
+.btn {
+  font-family: $font-primary;
+  background-color: $white-color;
+  color: $black-color;
+  border-radius: 57px;
+  padding: 14px 28px;
+
+  font-size: $text-md;
+  color: $black-color;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+
+  color: $neutral-white-color;
+}
+
+.btn-outline {
+  background-color: inherit;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  display: flex;
+  align-items: center;
+}
+
+.btn-cart {
+  position: absolute;
+  top: -8px;
+  right: -13px;
+
+  padding: 10px 10px;
+
+  background-color: $state-color;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
