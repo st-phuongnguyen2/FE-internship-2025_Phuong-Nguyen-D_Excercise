@@ -1,0 +1,51 @@
+.section-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+
+  .cart {
+    .list-item {
+      .card {
+        display: flex;
+        align-items: center;
+
+        .card-img {
+          .cart-item-img {
+            width: 80px;
+            height: 80px;
+          }
+
+          margin-right: 24px;
+        }
+
+        .card-footer {
+          font-weight: $font-700;
+
+          .card-title {
+            margin-right: 80px;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+
+            .btn {
+              padding: 4px 8px;
+              border-radius: 5px;
+              font-weight: inherit;
+            }
+          }
+
+          background-color: inherit;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .section-order {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 8px;
+  }
+}

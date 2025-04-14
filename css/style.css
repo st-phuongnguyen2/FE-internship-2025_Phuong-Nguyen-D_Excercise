@@ -190,7 +190,6 @@ body {
 }
 .section-banner.main-banner {
   position: relative;
-  padding-top: 112px;
 }
 .section-banner.main-banner .banner-img {
   max-height: 600px;
@@ -458,6 +457,7 @@ body {
 .header .section-actions .dropdown-group {
   display: flex;
   align-items: center;
+  margin-right: 12px;
 }
 .header .section-actions .dropdown-group .flag-icon {
   width: 21px;
@@ -469,6 +469,27 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-family: "SVN-Gilroy", sans-serif;
+}
+.header .section-actions .cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header .section-actions .cart .icon {
+  width: 25px;
+  height: 25px;
+}
+.header .section-actions .cart .cart-count {
+  position: absolute;
+  top: 19px;
+  left: 18px;
+  width: 18px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  color: red;
+  font-size: 12px;
+  text-align: center;
 }
 
 .footer {
@@ -548,6 +569,10 @@ body {
 }
 .footer .section-info .policy-link {
   color: #000000;
+}
+
+.main {
+  padding-top: 112px;
 }
 
 .container {
@@ -731,6 +756,46 @@ body {
 }
 .section-banner-adoption .section-content .btn-group {
   margin-top: 42px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+}
+.section-content .cart .list-item .card {
+  display: flex;
+  align-items: center;
+}
+.section-content .cart .list-item .card .card-img {
+  margin-right: 24px;
+}
+.section-content .cart .list-item .card .card-img .cart-item-img {
+  width: 80px;
+  height: 80px;
+}
+.section-content .cart .list-item .card .card-footer {
+  font-weight: 700;
+  background-color: inherit;
+  margin-left: auto;
+}
+.section-content .cart .list-item .card .card-footer .card-title {
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.section-content .cart .list-item .card .card-footer .card-title .btn {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: inherit;
+}
+.section-content .section-order {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

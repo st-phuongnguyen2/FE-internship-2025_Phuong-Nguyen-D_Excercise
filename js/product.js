@@ -1,6 +1,8 @@
 import { Product, CartItem } from './base.js';
+import { loadCartCount } from './cart-count.js';
 
 loadProduct();
+loadCartCount();
 
 async function loadProduct() {
   try {
@@ -11,14 +13,15 @@ async function loadProduct() {
     const products = data.map((item) => {
       return new Product(
         item.id,
-        item.name,
+        item.product,
         item.gene,
         item.age,
         item.price,
-        item.image
+        item.image,
+        item.unit
       );
     });
-
+    console.log('products:', products);
     renderProduct(products);
   } catch (error) {
     console.log(error);
@@ -26,7 +29,7 @@ async function loadProduct() {
 }
 
 function renderProduct(products) {
-  const productList = document.getElementById('list-product');
+  const listPet = document.getElementById('list-pet');
 
   // manipulation with DOM case use template string
   let ulHTMLString = '';
@@ -51,13 +54,13 @@ function renderProduct(products) {
               item.age
             }</span></span>
           </p>
-          <span class="card-price">${item.price}</span>
+          <span class="card-price">${item.price} ${item.unit}</span>
         </div>
       </a>
     </li>`;
   });
 
-  productList.innerHTML = ulHTMLString;
+  listPet.innerHTML = ulHTMLString;
 
   const btnsCart = document.querySelectorAll('button.btn.btn-cart');
 
@@ -73,6 +76,7 @@ function renderProduct(products) {
           if (foundCartDetail) {
             foundCartDetail.quantity = foundCartDetail.quantity + 1;
             localStorage.setItem('cart', JSON.stringify(cart));
+            loadCartCount();
           } else {
             const foundProductDetail = products.find((item) => {
               return item.id === productId;
@@ -82,10 +86,12 @@ function renderProduct(products) {
               foundProductDetail.name,
               foundProductDetail.image,
               foundProductDetail.price,
-              1
+              1,
+              foundProductDetail.unit
             );
             cart.push(cartItem);
             localStorage.setItem('cart', JSON.stringify(cart));
+            loadCartCount();
           }
         } else {
           const foundProductItem = products.find((item) => {
@@ -96,9 +102,11 @@ function renderProduct(products) {
             foundProductItem.name,
             foundProductItem.image,
             foundProductItem.price,
-            1
+            1,
+            foundProductItem.unit
           );
           localStorage.setItem('cart', JSON.stringify([cartItem]));
+          loadCartCount();
         }
       }
     });

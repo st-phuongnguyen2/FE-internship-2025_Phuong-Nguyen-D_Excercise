@@ -80,6 +80,7 @@
     .dropdown-group {
       display: flex;
       align-items: center;
+      margin-right: 12px;
 
       .flag-icon {
         width: 21px;
@@ -94,6 +95,32 @@
         font-size: $text-md;
         font-weight: $font-500;
         font-family: $font-primary;
+      }
+    }
+    .cart {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .icon {
+        width: 25px;
+        height: 25px;
+      }
+
+      .cart-count {
+        position: absolute;
+        top: 19px;
+        left: 18px;
+        
+        width: 18px;
+        height: 16px;
+
+        background-color: white;
+        border-radius: 50%;
+
+        color: red;
+        font-size: $spacing-sm;
+        text-align: center;
       }
     }
   }

@@ -13,7 +13,8 @@
     <div class="container">
       <div class="section-body">
         <div class="section-navigation">
-          <h2 class="section-title"><img class="logo-img" src="./assets/images/monito-logo.png" alt="Logo Monitor"></h2>
+          <h2 class="section-title"><a class="nav-homepage" href="./index.html"><img class="logo-img"
+                src="./assets/images/monito-logo.png" alt="Logo Monitor"></a></h2>
           <nav class="nav">
             <ul class="list-nav">
               <li class="list-item"><a class="list-item-link" href="#">Home</a></li>
@@ -39,12 +40,28 @@
               <option class="select-input-option" value="usa">Yen</option>
             </select>
           </div>
+          <div class="cart">
+            <a class="nav-cartpage" href="./cart.html">
+              <img class="icon" src="./assets/icons/cart-icon.svg" alt="cart-icon">
+              <span id="cart-count" class="cart-count"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
   <main class="main">
+    <div class="container">
+      <div class="section-content">
+        <ul class="list-product cart" id="cart">
+
+        </ul>
+
+        <div class="section-order" id="section-order">
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -107,6 +124,8 @@
       </div>
     </div>
   </footer>
+
+  <script type="module" src="./js/cart.js"></script>
 </body>
 
 </html>
