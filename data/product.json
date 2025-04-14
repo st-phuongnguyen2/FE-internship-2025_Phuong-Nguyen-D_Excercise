@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "product": "M0231 - Pomeranian White",
+    "gene": "Male",
+    "age": "02 months",
+    "price": "6.900.000",
+    "unit": "VND",
+    "image": "assets/images/dog1.png"
+  },
+  {
+    "id": "2",
+    "product": "M0502 - Poodle Tiny Yellow",
+    "gene": "Female",
+    "age": "02 months",
+    "price": "3.900.000",
+    "unit": "VND",
+    "image": "assets/images/dog2.png"
+  },
+  {
+    "id": "3",
+    "product": "M0102 - Poodle Tiny Sepia",
+    "gene": "Male",
+    "age": "02 months",
+    "price": "4.000.000",
+    "unit": "VND",
+    "image": "assets/images/dog3.png"
+  },
+  {
+    "id": "4",
+    "product": "M0512 - Alaskan Malamute Grey",
+    "gene": "Male",
+    "age": "02 months",
+    "price": "8.900.000 VND",
+    "unit": "VND",
+    "image": "assets/images/dog4.png"
+  },
+  {
+    "id": "5",
+    "product": "M0231 - Pembroke Corgi Cream",
+    "gene": "Male",
+    "age": "02 months",
+    "price": "7.900.000",
+    "unit": "VND",
+    "image": "assets/images/dog5.png"
+  },
+  {
+    "id": "6",
+    "product": "M0502 - Pembroke Corgi Tricolor",
+    "gene": "Female",
+    "age": "02 months",
+    "price": "9.000.000",
+    "unit": "VND",
+    "image": "assets/images/dog6.png"
+  },
+  {
+    "id": "7",
+    "product": "M0231 - Pomeranian White",
+    "gene": "Female",
+    "age": "02 months",
+    "price": "6.500.000",
+    "unit": "VND",
+    "image": "assets/images/dog7.png"
+  },
+  {
+    "id": "8",
+    "product": "M0512 - Poodle Tiny Dairy Cow",
+    "gene": "Male",
+    "age": "02 months",
+    "price": "5.000.000",
+    "unit": "VND",
+    "image": "assets/images/dog8.png"
+  }
+]
