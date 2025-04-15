@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .card {
   display: block;
 
@@ -6,7 +8,7 @@
 
   background-color: var(--white-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
+
   color: $neutral-color;
 
   &-img {
@@ -37,7 +39,7 @@
       color: $neutral-color-60;
       font-size: $text-xs;
       line-height: 18px;
-      
+
       .detail-key {
         font-weight: $font-500;
       }

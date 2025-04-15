@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .btn {
   font-family: $font-primary;
   background-color: $white-color;
@@ -11,6 +13,12 @@
 
 .btn-primary {
   background-color: $primary-color;
+
+  color: $neutral-white-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
 
   color: $neutral-white-color;
 }

@@ -1,7 +1,4 @@
-@import 'banner';
-@import 'card';
-@import 'list';
-@import 'product';
-@import 'badges';
-@import 'buttons';
-@import 'inputs';
+@forward 'card';
+@forward 'list';
+@forward 'buttons';
+@forward 'inputs';

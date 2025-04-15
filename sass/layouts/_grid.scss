@@ -5,6 +5,9 @@
   padding: 0 16px;
 }
 
+.section-content {
+}
+
 $columns: 12;
 $gap: 20px;
 
@@ -16,10 +19,10 @@ $gap: 20px;
 
 @for $i from 1 through $columns {
   .col-#{$i} {
-    // width: calc(calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i));
     width: calc((100% - (#{$i + 1} - 1) * $gap) / #{$i + 1});
   }
 }
+
 // Breakpoints
 @media screen and (min-width: 576px) {
   @for $i from 1 through $columns {
