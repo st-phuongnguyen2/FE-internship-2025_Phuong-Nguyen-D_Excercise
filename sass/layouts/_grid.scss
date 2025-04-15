@@ -27,14 +27,16 @@ $gap: 20px;
 @media screen and (min-width: 576px) {
   @for $i from 1 through $columns {
     .col-sm-#{$i} {
-      width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+      // width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+      width: calc((100% - (#{$i + 1} - 1) * $gap) / #{$i + 1});
     }
   }
 }
 @media screen and (min-width: 768px) {
   @for $i from 1 through $columns {
     .col-md-#{$i} {
-      width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+      // width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+      width: calc((100% - (#{$i + 1} - 1) * $gap) / #{$i + 1});
     }
   }
 }
